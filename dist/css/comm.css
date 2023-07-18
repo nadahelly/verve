@@ -280,6 +280,10 @@ legend {
   content: "";
 }
 
+body {
+  background: url(../../images/m2.png) 0 0 no-repeat;
+}
+
 .main {
   height: 100px;
 }
