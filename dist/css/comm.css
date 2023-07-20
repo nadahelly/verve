@@ -312,8 +312,7 @@ body {
   display: flex;
 }
 #header .lst-util .btn-g {
-  padding-top: 15px;
-  padding-left: 10px;
+  padding: 15px 0 0 10px;
   width: 31px;
   height: 64px;
 }
@@ -324,4 +323,68 @@ body {
 #header .lst-util .btn-search::before {
   content: "\f002";
   font-weight: 900;
+}
+
+.gnb {
+  margin: 0 20px;
+}
+.gnb .depth1 {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 9.5px;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.gnb li {
+  padding-right: 33.5px;
+  padding-top: 11px;
+}
+
+.slide-wrap {
+  display: block;
+}
+.slide-wrap img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 77%;
+     object-position: 50% 77%;
+  width: 375px;
+  height: 250px;
+}
+
+#main {
+  bottom: 10px;
+}
+#main h2 {
+  padding: 9.3px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: "Noto Serif KR", serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+#main .depth2 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Noto Sans KR", sans-serif;
+}
+#main .depth2 a {
+  color: #cfcfcf;
+}
+#main .depth2 a:hover {
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+#main .sec-new h3 {
+  letter-spacing: 1px;
+  margin-top: 29px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Gothic A1", sans-serif;
+}
+#main .sec-new img {
+  padding-top: 7px;
 }/*# sourceMappingURL=comm.css.map */

@@ -26,8 +26,7 @@
   .lst-util {
     display: flex;
     .btn-g {
-      padding-top: 15px;
-      padding-left: 10px;
+      padding: 15px 0 0 10px;
       width: 31px;
       height: 64px;
       &::before {
@@ -38,6 +37,69 @@
     .btn-search::before {
       content: "\f002";
       font-weight: 900;
+    }
+  }
+}
+.gnb {
+  margin: 0 20px;
+  .depth1 {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 9.5px;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Noto Sans KR', sans-serif;
+  }
+  li {
+    padding-right: 33.5px;
+    padding-top: 11px;
+  }
+}
+.slide-wrap {
+  display: block;
+  img {
+    object-fit: cover;
+    object-position: 50% 77%;
+    width: 375px;
+    height: 250px;
+  }
+}
+
+
+#main {
+  bottom: 10px;
+  h2 {
+    padding: 9.3px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: 'Noto Serif KR', serif;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .depth2 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Noto Sans KR', sans-serif;
+    a {
+      color: #cfcfcf;
+      &:hover {
+      color: #000;
+      border-bottom: 1px solid #000;
+      }
+    }
+  }
+  .sec-new {
+    h3{
+    letter-spacing: 1px;
+    margin-top: 29px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Gothic A1', sans-serif;
+    }
+    img {
+      padding-top: 7px;
     }
   }
 }
