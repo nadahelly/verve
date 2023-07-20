@@ -281,7 +281,7 @@ legend {
 }
 
 body {
-  background: url(../../images/m2.png) 0 0 no-repeat;
+  background: url(../../images/상품리스트-WOMEN.png) 0 0 no-repeat;
 }
 
 .main {
@@ -293,34 +293,35 @@ body {
 }
 
 .container {
-  padding: 0 4%;
+  padding: 0 20px;
 }
 
-#header {
-  border-bottom: 1px solid #000;
-}
 #header .inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 70px;
+  height: 64px;
+}
+#header .inner #logo {
+  padding-bottom: 5px;
+  font-family: "Noto Serif KR", serif;
+  font-weight: 900;
+  font-size: 36px;
 }
 #header .lst-util {
   display: flex;
 }
 #header .lst-util .btn-g {
-  width: 40px;
-  height: 70px;
+  padding-top: 15px;
+  padding-left: 10px;
+  width: 31px;
+  height: 64px;
 }
 #header .lst-util .btn-g::before {
-  font-size: 20px;
+  font-size: 23px;
   font-family: "Font Awesome 6 Free";
 }
 #header .lst-util .btn-search::before {
   content: "\f002";
   font-weight: 900;
-}
-#header .lst-util .btn-burger::before {
-  content: "\f007";
-  font-weight: 400;
 }/*# sourceMappingURL=comm.css.map */

@@ -6,35 +6,38 @@
 
 // 공통
 .container {
-  padding: 0 4%;
+  padding: 0 20px;
 }
 
 // header
 #header {
-  border-bottom: 1px solid #000;
   .inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 70px;
+    height: 64px;
+    #logo {
+      padding-bottom: 5px;
+      font-family: 'Noto Serif KR', serif;
+      font-weight: 900;
+      font-size: 36px;
+    }
   }
   .lst-util {
     display: flex;
     .btn-g {
-      width: 40px;
-      height: 70px;
+      padding-top: 15px;
+      padding-left: 10px;
+      width: 31px;
+      height: 64px;
       &::before {
-        font-size: 20px;
+        font-size: 23px;
         font-family: "Font Awesome 6 Free";
       }
     }
     .btn-search::before {
       content: "\f002";
       font-weight: 900;
-    }
-    .btn-burger::before {
-      content: "\f007";
-      font-weight: 400;
     }
   }
 }
