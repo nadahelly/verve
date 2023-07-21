@@ -75,12 +75,14 @@ q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after {
+blockquote:before,
+blockquote:after {
   content: "";
   content: none;
 }
 
-q:before, q:after {
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -110,11 +112,14 @@ body {
 }
 
 /* 뷰표트 변환시 폰트크기 자동확대 방지 */
-input[type=text], input[type=password], input[type=submit], input[type=search] {
+input[type="text"],
+input[type="password"],
+input[type="submit"],
+input[type="search"] {
   -webkit-appearance: none;
   border-radius: 0;
 }
-input:checked[type=checkbox] {
+input:checked[type="checkbox"] {
   background-color: #666;
   -webkit-appearance: checkbox;
 }
@@ -124,11 +129,14 @@ button {
   border-radius: 0;
 }
 
-input[type=button], input[type=submit], input[type=reset], input[type=file] {
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="file"] {
   -webkit-appearance: button;
   border-radius: 0;
 }
-input[type=search]::-webkit-search-cancel-button {
+input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
 
@@ -153,7 +161,8 @@ a {
   color: #333;
   text-decoration: none;
 }
-a:active, a:hover {
+a:active,
+a:hover {
   text-decoration: none;
 }
 
@@ -172,7 +181,7 @@ hr {
   display: none;
 }
 
-input[type=password] {
+input[type="password"] {
   font-family: "Malgun Gothic";
 }
 
@@ -287,6 +296,33 @@ body .wrap {
   opacity: 0.7;
 }
 
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
 .main {
   height: 100px;
 }
@@ -299,32 +335,49 @@ body .wrap {
   padding: 0 4%;
 }
 
-#header {
-  border-bottom: 1px solid #000;
-  background: #000;
-}
-#header .inner {
+#header .util-g {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 70px;
+  height: 44px;
 }
-#header .lst-util {
-  display: flex;
+#header .btn-g {
+  width: 44px;
+  height: 44px;
 }
-#header .lst-util .btn-g {
-  width: 40px;
-  height: 70px;
-}
-#header .lst-util .btn-g::before {
+#header .btn-g::before {
   font-size: 20px;
   font-family: "Font Awesome 6 Free";
 }
-#header .lst-util .btn-search::before {
+#header .right-util {
+  display: flex;
+}
+#header .btn-back::before {
+  content: "\f104";
+  font-weight: 900;
+}
+#header .btn-search::before {
   content: "\f002";
   font-weight: 900;
 }
-#header .lst-util .btn-burger::before {
-  content: "\f007";
-  font-weight: 400;
-}/*# sourceMappingURL=comm.css.map */
+#header .btn-shoppingbag::before {
+  font-size: 64px;
+  font-weight: 900;
+}
+
+.mySwiper {
+  display: flex;
+  margin-top: -44px;
+}
+
+.accordion:after {
+  content: "➕"; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #ffffff;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "➖"; /* Unicode character for "minus" sign (-) */
+} /*# sourceMappingURL=comm.css.map */

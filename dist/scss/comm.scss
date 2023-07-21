@@ -11,31 +11,42 @@
 
 // header
 #header {
-  border-bottom: 1px solid #000;
-  background: #000;
-  .inner {
+  // background: #000;
+  .util-g {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 70px;
+    height: 44px;
   }
-  .lst-util {
+  .btn-g {
+    width: 44px;
+    height: 44px;
+    &::before {
+      font-size: 20px;
+      font-family: "Font Awesome 6 Free";
+    }
+  }
+  .right-util {
     display: flex;
-    .btn-g {
-      width: 40px;
-      height: 70px;
-      &::before {
-        font-size: 20px;
-        font-family: "Font Awesome 6 Free";
-      }
-    }
-    .btn-search::before {
-      content: "\f002";
-      font-weight: 900;
-    }
-    .btn-burger::before {
-      content: "\f007";
-      font-weight: 400;
-    }
+  }
+  .btn-back::before {
+    content: "\f104";
+    font-weight: 900;
+  }
+  .btn-search::before {
+    content: "\f002";
+    font-weight: 900;
+  }
+  .btn-shoppingbag::before {
+    font-size: 64px;
+    font-weight: 900;
   }
 }
+
+// slide
+.mySwiper {
+  display: flex;
+  margin-top: -44px;
+}
+
+// product info
