@@ -6,7 +6,7 @@
 
 // 공통
 .container {
-  padding: 0 20px;
+  margin: 0 20px;
 }
 
 // header
@@ -101,5 +101,59 @@
     img {
       padding-top: 7px;
     }
+    .txt-new {
+      margin-top: 11px;
+      .txt-new__tit {
+        display: block;
+        font-size: 13px;
+        font-weight: 700;
+        font-family: 'Noto Sans KR', sans-serif;
+      }
+      .txt-new__desk {
+        display: block;
+        margin-top: -2px;
+        font-size: 12px;
+        font-weight: 400;
+        font-family: 'Noto Sans KR', sans-serif;
+      }
+      .txt-new__p {
+        display: block;
+        margin-top: 3px;
+        font-size: 18px;
+        font-weight: 700;
+        font-family: 'Noto Sans KR', sans-serif;
+      }
+      p {
+        letter-spacing: -0.1px;
+      }
+    }
   }
 }
+.section-contents {
+  width: 975px;
+  .lst-new {
+    display: flex;
+    justify-content: space-between;
+    li {
+      &:nth-child(6) {
+        .btn-item {
+          width: 80px;
+          height: 160px;
+          background: rgb(0, 0, 0, 0.1);
+          margin: 7px 20px 0 0;
+          &:before {
+            content: "\f138";
+            font-family: "Font Awesome 6 Pro";
+            font-weight: 900;
+          }
+          .txt-new__tit {
+            font-size: 13px;
+            font-weight: 500;
+            font-family: 'Gothic A1', sans-serif;
+          }
+        }
+      }
+    }
+  }
+}
+
