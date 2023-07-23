@@ -17,3 +17,20 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+$(document).ready(function () {
+  var mySwiper = new Swiper ('.swiper-container', {
+    loop:true,
+    direction: 'horizontal'
+    
+});
+});
+
+var swiper = new Swiper(".mySwiper", {
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    hide: true,
+  },
+});
+
+

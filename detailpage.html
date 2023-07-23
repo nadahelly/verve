@@ -40,13 +40,17 @@
       rel="stylesheet"
       href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
     />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
     <link rel="stylesheet" href="./dist/css/comm.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
     <script defer src="./dist/js/comm.js"></script>
   </head>
 
@@ -70,8 +74,9 @@
               </li>
               <li>
                 <button class="btn-g btn-shoppingbag">
-                  <i class="las la-shopping-bag"></i>
-                  <span class="blind">장바구니</span>
+                  <span class="material-icons-outlined">
+                    <span class="blind">장바구니</span>
+                  </span>
                 </button>
               </li>
             </ul>
@@ -81,36 +86,26 @@
     </div>
 
     <!-- slide main images -->
-    <div class="slide-wrap">
-      <swiper-container class="mySwiper">
-        <swiper-slide><img src="./images/dp-slide1.jpg" alt="" /></swiper-slide>
-        <swiper-slide><img src="./images/dp-slide2.jpg" alt="" /></swiper-slide>
-        <swiper-slide><img src="./images/dp-slide3.jpg" alt="" /></swiper-slide>
-        <swiper-slide><img src="./images/dp-slide4.jpg" alt="" /></swiper-slide>
-      </swiper-container>
-
-      <div
-        class="swiper-pagination swiper-pagination-fraction swiper-pagination-horizontal"
-      >
-        <span class="swiper-pagination-current">1</span> /
-        <span class="swiper-pagination-total">4</span>
-      </div>
-      <span class="swiper-pagination-current">1</span> /
-      <span class="swiper-pagination-total">4</span>
+    <div class="swiper-container">
+        <swiper-container class="mySwiper" scrollbar-hide="true">
+          <swiper-slide><img src="./images/dp-slide1.jpg" alt="slide-1" /></swiper-slide>
+          <swiper-slide><img src="./images/dp-slide2.jpg" alt="slide-2" /></swiper-slide>
+          <swiper-slide><img src="./images/dp-slide3.jpg" alt="slide-3" /></swiper-slide>
+          <swiper-slide><img src="./images/dp-slide4.jpg" alt="slide-4" /></swiper-slide>
+        </swiper-container>
+        <div class="swiper-scrollbar">
+        </div>
     </div>
 
-    <!-- <div class="txt-shopping">
-      <strong class="txt-shopping__tit">제목</strong>
-      <p class="txt-shopping__desc">상품설명</p>
-    </div> -->
-
-    <!-- product info / brand/product tit/review star/price -->
+    <!-- product info -->
     <div class="product-info container">
       <div class="txt-product">
-        <strong class="txt-product__brand">A;td</strong>
+        <span class="txt-product__brand">A;td
+          <span class="blind">브랜드이름 A;td 아티드</span>
+        </span><br>
         <span class="txt-product__title">
-          [23SUMMER] | [08/08 예약배송] <br />
-          23HS_Crochet Knit Cardigan_WHITE</span
+          [23SUMMER]|[08/08 예약배송] <br />
+          23HS_크로쉐 니트 가디건_WHITE</span
         >
       </div>
 
@@ -187,7 +182,7 @@
             <img src="#" alt="" />
             <div class="brandhome-box-link__tit">
               <span>A;td</span>
-              <span>Beloved Attitude hi</span>
+              <span>Beloved Attitude</span>
             </div>
             <div class="brandhome-box-link__icon">
               <img src="#" alt="">
@@ -197,21 +192,23 @@
       </div>
     </div>
 
-    <div class="detailpage-tab">
-      <ul class="detailpage-tab__detail">
-        <li><a href="javascript:void(0)">
+    <div class="detailpage-tab container">
+      <ul class="detailpage-tab__menu" role="tablist">
+        <li class="detailpage-tab__menu-1" role="presentation">
+          <a href="javascript:void(0)" class="detailpage-tab__detail" role="tab">
           Detail
-        </a></li>
-      </ul>
-      <ul class="detailpage-tab__review">
-        <li><a href="javascript:void(0)">
+        </a>
+      </li>
+        <li class="detailpage-tab__menu-2" role="presentation">
+          <a href="javascript:void(0)" class="detailpage-tab__review" role="tab">
           Review
-        </a></li>
-      </ul>
-      <ul class="detailpage-tab__q&a">
-        <li><a href="javascript:void(0)">
+        </a>
+      </li>
+        <li class="detailpage-tab__menu-3" role="presentation">
+          <a href="javascript:void(0)" class="detailpage-tab__q&a" role="tab">
           Q&A
-        </a></li>
+        </a>
+      </li>
       </ul>
     </div>
     
