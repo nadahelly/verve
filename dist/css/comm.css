@@ -335,11 +335,17 @@ body .txt-product .txt-product__brand {
   padding: 0 20px;
 }
 
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
 #header .util-g {
   display: flex;
+  height: 44px;
   align-items: center;
   justify-content: space-between;
-  height: 44px;
 }
 #header .btn-g {
   width: 44px;
@@ -368,7 +374,6 @@ body .txt-product .txt-product__brand {
   display: flex;
   width: 375px;
   height: 440px;
-  margin-top: -44px;
 }
 .swiper-container .swiper-slide img {
   display: block;
@@ -378,15 +383,54 @@ body .txt-product .txt-product__brand {
 .product-info {
   padding-top: 20px;
 }
-.product-info .txt-product .txt-product__brand {
+.product-info .product-info-front {
+  position: relative;
+}
+.product-info .product-info-front .product-info-front__brand {
   font-size: 20px;
   font-weight: 700;
 }
-.product-info .txt-product .txt-product__title {
+.product-info .product-info-front .product-info-front__likeicon {
+  position: absolute;
+  top: -4px;
+  right: 0;
+  font-size: 24px;
+}
+.product-info .product-info-tit__product {
   display: block;
   margin-top: 4px;
   font-size: 15px;
   font-weight: 500;
+}
+
+.prd-rating {
+  display: flex;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 8px;
+}
+.prd-rating .prd-rating-star {
+  font-size: 17px;
+  margin-left: 2px;
+}
+.prd-rating .prd-rating-link {
+  font-size: 12px;
+  height: 14px;
+  border-bottom: 1px solid #000;
+}
+
+.prd-coupon {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  width: 72px;
+  height: 27px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  background: #555;
+  color: #fff;
 }
 
 .detailpage-tab {

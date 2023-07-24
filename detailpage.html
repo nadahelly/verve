@@ -97,32 +97,38 @@
         </div>
     </div>
 
-    <!-- product info -->
+    <!-- product information -->
     <div class="product-info container">
-      <div class="txt-product">
-        <span class="txt-product__brand">A;td
+      <div class="product-info-front">
+        <span class="product-info-front__brand">A;td
           <span class="blind">브랜드이름 A;td 아티드</span>
         </span><br>
-        <span class="txt-product__title">
+        <span class="product-info-front__likeicon">
+          <span class="blind">좋아요 아이콘</span>
+          <a href="#"><i class="fa-regular fa-heart"></i></a>
+        </span>
+      </div>
+      <div class="product-info-tit">
+        <span class="product-info-tit__product">
           [23SUMMER]|[08/08 예약배송] <br />
-          23HS_크로쉐 니트 가디건_WHITE</span
-        >
+          23HS_크로쉐 니트 가디건_WHITE
+        </span>
       </div>
 
-      <div class="product-review">
-        <a href="#">
-          <span class="blind">리뷰 별 아이콘</span>
-          <i class="las la-star"></i>
-          <i class="las la-star"></i>
-          <i class="las la-star"></i>
-          <i class="las la-star"></i>
-          <i class="las la-star-half"></i>
-        </a>
 
-        <span class="review">
-          <span class="blind">리뷰 더보기</span>
-          <a href="#">485건 리뷰 더보기</a>
-        </span>
+      <div class="prd-rating">
+       <div class="prd-rating-star">
+        <i class="las la-star"></i><i class="las la-star"></i><i class="las la-star"></i><i class="las la-star"></i><i class="las la-star-half"></i>
+       </div>
+    
+        <button class="prd-rating-link">
+          <span class="blind">77개 리뷰 더보기</span>
+            77
+        </button>
+        <div class="prd-coupon">
+          <button type="button" class="prd-coupon">쿠폰받기
+          </button>
+        </div>
       </div>
 
       <div class="txt-product-price">
@@ -193,19 +199,19 @@
     </div>
 
     <div class="detailpage-tab container">
-      <ul class="detailpage-tab__menu" role="tablist">
-        <li class="detailpage-tab__menu-1" role="presentation">
-          <a href="javascript:void(0)" class="detailpage-tab__detail" role="tab">
+      <ul class="detailpage-tab__menu">
+        <li class="detailpage-tab__menu-1">
+          <a href="javascript:void(0)" class="detailpage-tab__detail">
           Detail
         </a>
       </li>
-        <li class="detailpage-tab__menu-2" role="presentation">
-          <a href="javascript:void(0)" class="detailpage-tab__review" role="tab">
+        <li class="detailpage-tab__menu-2">
+          <a href="javascript:void(0)" class="detailpage-tab__review">
           Review
         </a>
       </li>
-        <li class="detailpage-tab__menu-3" role="presentation">
-          <a href="javascript:void(0)" class="detailpage-tab__q&a" role="tab">
+        <li class="detailpage-tab__menu-3">
+          <a href="javascript:void(0)" class="detailpage-tab__q&a">
           Q&A
         </a>
       </li>
