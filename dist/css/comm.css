@@ -448,27 +448,36 @@ body .txt-product .txt-product__brand {
   margin-top: 6px;
 }
 
-.accordion-1-benefitprice {
+.acc-1 {
+  position: relative;
   display: flex;
-  height: 60px;
-  align-items: center;
-  justify-content: space-between;
-  border-top: 0.5px solid #cfcfcf;
-}
-.accordion-1-benefitprice .accordion {
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
   transition: 0.2s;
+  justify-content: space-between;
 }
-.accordion-1-benefitprice .accordion-1-discount__percent {
+
+.acc-1-benefitprice {
+  height: 60px;
+  align-items: center;
+  border-top: 0.5px solid #cfcfcf;
+}
+.acc-1-benefitprice .acc-1-discount .acc-1-discount__percent {
   font-size: 14px;
   font-weight: bold;
   color: #DD0035;
 }
-.accordion-1-benefitprice .accordion-1-discount__price {
+.acc-1-benefitprice .acc-1-discount .acc-1-discount__price {
   font-size: 14px;
   font-weight: bold;
+}
+.acc-1-benefitprice .acc-1-discount .acc-1-discount__price::after {
+  content: "<i class=" fa-solid fa-plus "></i>";
+  position: absolute;
+  top: 0;
+  right: 0;
+  float: right;
 }
 
 .active,
@@ -476,17 +485,18 @@ body .txt-product .txt-product__brand {
   background-color: #ffffff;
 }
 
-.accordion-1-shipinfo {
+.acc-2 {
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.acc-2-shipinfo {
   display: flex;
   height: 60px;
   align-items: center;
   justify-content: space-between;
   border-top: 0.5px solid #cfcfcf;
-}
-.accordion-1-shipinfo .accordion {
-  font-size: 14px;
-  font-weight: bold;
-  cursor: pointer;
 }
 
 /* Style the accordion panel. Note: hidden by default */

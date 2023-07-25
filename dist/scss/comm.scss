@@ -154,27 +154,37 @@
 
 
 // accordion 1 - 최대혜택가
-.accordion-1-benefitprice {
+.acc-1 {
+  position: relative;
   display: flex;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+  justify-content: space-between;
+}
+.acc-1-benefitprice {
   height: 60px;
   align-items: center;  
-  justify-content: space-between;
   border-top: 0.5px solid #cfcfcf;
   // background-color: #fff;
-  .accordion {
-    font-size: 14px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.2s;
-  }
-  .accordion-1-discount__percent {
-    font-size: 14px;
-    font-weight: bold;
-    color: #DD0035;
-  }
-  .accordion-1-discount__price {
-     font-size: 14px;
-    font-weight: bold;
+  .acc-1-discount {
+    .acc-1-discount__percent {
+      font-size: 14px;
+      font-weight: bold;
+      color: #DD0035;
+    }
+    .acc-1-discount__price {
+      font-size: 14px;
+      font-weight: bold;
+      &::after {
+        content: "<i class="fa-solid fa-plus"></i>";
+        position: absolute;
+        top: 0;
+        right: 0;
+        float: right;
+      }
+    }
   }
 }
 .active,
@@ -183,18 +193,18 @@
 }
 
 // accordion 1 - 배송정보
-.accordion-1-shipinfo {
+.acc-2 {
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.acc-2-shipinfo {
   display: flex;
   height: 60px;
   align-items: center;  
   justify-content: space-between;
   border-top: 0.5px solid #cfcfcf;
   // background-color: #fff;
-  .accordion {
-    font-size: 14px;
-    font-weight: bold;
-    cursor: pointer;
-  }
 }
 
   
