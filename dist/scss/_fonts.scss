@@ -1,25 +1,47 @@
 @font-face {
-  font-family: "Poppins";
+  font-family: "NotoSerifKR";
   font-weight: 300;
-  src: url(../font/Poppins-Light.woff) format("woff");
+  src: url(../fonts/NotoSerifKR-Light.woff) format("woff");
 }
 @font-face {
-  font-family: "Poppins";
+  font-family: "NotoSerifKR";
   font-weight: 400;
-  src: url(../fonts/Poppins-Regular.woff) format("woff");
+  src: url(../fonts/NotoSerifKR-Regular.woff) format("woff");
 }
 @font-face {
-  font-family: "Poppins";
+  font-family: "NotoSerifKR";
   font-weight: 500;
-  src: url(../fonts/Poppins-Medium.woff) format("woff");
+  src: url(../fonts/NotoSerifKR-Medium.woff) format("woff");
 }
 @font-face {
-  font-family: "Poppins";
+  font-family: "NotoSerifKR";
   font-weight: 600;
-  src: url(../fonts/Poppins-SemiBold.woff) format("woff");
+  src: url(../fonts/NotoSerifKR-SemiBold.woff) format("woff");
 }
 @font-face {
-  font-family: "Poppins";
+  font-family: "NotoSerifKR";
   font-weight: 700;
-  src: url(../fonts/Poppins-Bold.woff) format("woff");
+  src: url(../fonts/NotoSerifKR-Bold.woff) format("woff");
 }
+@font-face {
+  font-family: "NotoSerifKR";
+  font-weight: 900;
+  src: url(../fonts/NotoSerifKR-Black.woff) format("woff");
+}
+@font-face {
+  font-family: "GothicA1";
+  font-weight: 200;
+  src: url(../fonts/GothicA1-ExtraLight.woff) format("woff");
+}
+@font-face {
+  font-family: "GothicA1";
+  font-weight: 400;
+  src: url(../fonts/GothicA1-Regular.woff) format("woff");
+}
+@font-face {
+  font-family: "GothicA1";
+  font-weight: 500;
+  src: url(../fonts/GothicA1-Medium.woff) format("woff");
+}
+
+

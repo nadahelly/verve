@@ -1,3 +1,195 @@
-.contents {
-  height: 300px;
+.container {
+  margin: 0 20px;
 }
+
+// header
+#header {
+  .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    #logo {
+      padding-bottom: 5px;
+      font-family: 'Noto Serif KR', serif;
+      font-weight: 900;
+      font-size: 36px;
+    }
+  }
+  .lst-util {
+    display: flex;
+    .btn-g {
+      padding: 15px 0 0 10px;
+      width: 31px;
+      height: 64px;
+      &::before {
+        font-size: 23px;
+        font-family: "Font Awesome 6 Free";
+      }
+    }
+    .btn-search::before {
+      content: "\f002";
+      font-weight: 900;
+    }
+  }
+}
+.gnb {
+  margin: 0 20px;
+  .depth1 {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 9.5px;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Noto Sans KR', sans-serif;
+  }
+  li {
+    padding-right: 33.5px;
+    padding-top: 11px;
+  }
+}
+.slide-wrap {
+  display: block;
+  img {
+    object-fit: cover;
+    object-position: 50% 77%;
+    width: 375px;
+    height: 250px;
+  }
+}
+
+
+#main {
+  bottom: 10px;
+  h2 {
+    padding: 9.3px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: 'Noto Serif KR', serif;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .depth2 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Noto Sans KR', sans-serif;
+    a {
+      color: #cfcfcf;
+      &:hover {
+      color: #000;
+      border-bottom: 1px solid #000;
+      }
+    }
+  }
+  .sec-new {
+    h3{
+    letter-spacing: 1px;
+    margin-top: 29px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Gothic A1', sans-serif;
+    }
+    img {
+      padding-top: 7px;
+    }
+    .txt-new {
+      margin-top: 11px;
+      .txt-new__tit {
+        display: block;
+        font-size: 13px;
+        font-weight: 700;
+        font-family: 'Noto Sans KR', sans-serif;
+      }
+      .txt-new__desk {
+        display: block;
+        margin-top: -2px;
+        font-size: 12px;
+        font-weight: 400;
+        font-family: 'Noto Sans KR', sans-serif;
+      }
+      .txt-new__p {
+        display: block;
+        margin-top: 3px;
+        font-size: 18px;
+        font-weight: 700;
+        font-family: 'Noto Sans KR', sans-serif;
+      }
+      p {
+        letter-spacing: -0.1px;
+      }
+    }
+  }
+}
+.section-contents {
+  width: 975px;
+  .lst-new {
+    display: flex;
+    justify-content: space-between;
+    li {
+      &:nth-child(6) {
+        .btn-item {
+          width: 80px;
+          height: 160px;
+          background: rgb(0, 0, 0, 0.1);
+          margin: 7px 20px 0 0;
+          &::before {
+            content: "\f138";
+            font-family: "Font Awesome 6 Pro";
+            font-weight: 900;
+            font-size: 20px;
+          }
+          .txt-new__tit {
+            font-size: 13px;
+            font-weight: 500;
+            font-family: 'Gothic A1', sans-serif;
+          }
+        }
+      }
+    }
+  }
+}
+
+.swiper-wrapper {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  box-sizing: content-box;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+// .swiper {
+//   width: 100%;
+//   height: 100%;
+// }
+
+// .swiper-slide {
+//   .swiper-slide-img {
+//     height: 160px;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     &::after {
+//       content: "";
+//       position: absolute;
+//       top: 0; 
+//       left: 0;
+//       right: 0;
+//       bottom: 0;
+//       // width: 100%;
+//       // height: 100%; 이렇게 써도됨
+//     }
+//     img {
+//       display: block;
+//       width: 160px;
+//       height: 160px;
+//       object-fit: cover;
+//     }
+//   }
+// }
