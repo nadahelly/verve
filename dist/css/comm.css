@@ -453,31 +453,37 @@ body .txt-product .txt-product__brand {
   display: flex;
   font-size: 14px;
   font-weight: bold;
+  padding: 19px 27px 19px 0;
+  justify-content: space-between;
+  align-items: center;
   cursor: pointer;
   transition: 0.2s;
-  justify-content: space-between;
+  border-top: 1px solid #cfcfcf;
+  background-color: #fff;
+}
+.acc-1::before {
+  content: "+";
+  position: absolute;
+  display: inline-block;
+  top: 19px;
+  right: -4px;
+  width: 20px;
+  height: 20px;
+  align-content: center;
+  font-family: "Font Awesome 5 Free";
+  font-size: 15px;
+  font-weight: 900;
 }
 
-.acc-1-benefitprice {
-  height: 60px;
-  align-items: center;
-  border-top: 0.5px solid #cfcfcf;
-}
-.acc-1-benefitprice .acc-1-discount .acc-1-discount__percent {
+.acc-1-discount .acc-1-discount__percent {
   font-size: 14px;
   font-weight: bold;
   color: #DD0035;
+  margin-right: 4px;
 }
-.acc-1-benefitprice .acc-1-discount .acc-1-discount__price {
+.acc-1-discount .acc-1-discount__price {
   font-size: 14px;
   font-weight: bold;
-}
-.acc-1-benefitprice .acc-1-discount .acc-1-discount__price::after {
-  content: "<i class=" fa-solid fa-plus "></i>";
-  position: absolute;
-  top: 0;
-  right: 0;
-  float: right;
 }
 
 .active,
@@ -486,22 +492,35 @@ body .txt-product .txt-product__brand {
 }
 
 .acc-2 {
+  position: relative;
   font-size: 14px;
   font-weight: bold;
-  cursor: pointer;
-}
-
-.acc-2-shipinfo {
-  display: flex;
-  height: 60px;
-  align-items: center;
+  padding: 18.5px 27px 18.5px 0;
   justify-content: space-between;
-  border-top: 0.5px solid #cfcfcf;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+  background-color: #fff;
+  border-top: 1px solid #cfcfcf;
+  border-bottom: 1px solid #cfcfcf;
+}
+.acc-2::before {
+  content: "+";
+  position: absolute;
+  display: inline-block;
+  top: 19px;
+  right: -4px;
+  width: 20px;
+  height: 20px;
+  align-content: center;
+  font-family: "Font Awesome 5 Free";
+  font-size: 15px;
+  font-weight: 900;
 }
 
 /* Style the accordion panel. Note: hidden by default */
 .brandhome {
-  margin-top: 16px;
+  margin: 16px 0 24px 0;
 }
 
 .brandhome-box {
@@ -511,42 +530,56 @@ body .txt-product .txt-product__brand {
   border: 1px solid #cfcfcf;
 }
 .brandhome-box .brandhomeimg {
-  width: 70px;
-  height: 70px;
+  position: relative;
+  width: 68px;
+  height: 68px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.detailpage-tab {
-  position: relative;
-  margin-top: 24px;
+.dp-tab {
   background: #fff;
 }
-.detailpage-tab ul {
-  display: table;
+.dp-tab ul {
+  display: flex;
   position: relative;
   width: 100%;
   height: 40px;
-  table-layout: fixed;
   color: #cfcfcf;
+  font-weight: bold;
+  font-size: 14px;
   border-bottom: 1px solid #cfcfcf;
 }
-.detailpage-tab ul li:nth-child(1) {
-  display: table-cell;
+.dp-tab ul li:nth-child(1) {
   text-align: center;
   vertical-align: middle;
 }
-.detailpage-tab ul li:nth-child(1):active {
+.dp-tab ul li:nth-child(1):active {
   color: #000;
   border-bottom: 1px solid #000;
 }
-.detailpage-tab ul li:nth-child(2) {
-  display: table-cell;
+.dp-tab ul li:nth-child(2) {
   text-align: center;
   vertical-align: middle;
 }
-.detailpage-tab ul li:nth-child(3) {
-  display: table-cell;
+.dp-tab ul li:nth-child(3) {
   text-align: center;
   vertical-align: middle;
+}
+
+.dp-pd-info {
+  padding: 38px 80px;
+  font-size: 10px;
+  color: #555;
+}
+.dp-pd-info li {
+  display: flex;
+}
+.dp-pd-info li strong {
+  width: 90px;
+  padding-right: 30px;
+}
+
+.dp-pd-image {
+  padding-bottom: 8px;
 }/*# sourceMappingURL=comm.css.map */

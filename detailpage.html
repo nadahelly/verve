@@ -177,20 +177,28 @@
       </div> -->
 
     <!-- accordion -->
-    <!-- btn을 div로 수정필요!! -->
     <div class="accordion container">
+      <!-- accordion 1 최대혜택가 -->
       <div class="acc-1">
-        <div class="acc-1-benefitprice">최대혜택가</div>
+        <div class="acc-1-benefitprice">
+          <div class="acc-1-benefitprice__txt">최대혜택가</div>
+        </div>
         <div class="acc-1-discount">
-          <span class="acc-1-discount__percent">19%</span>
-          <span class="acc-1-discount__price">104,490원</span>
+          <span class="acc-1-discount__percent">
+            <span class="blind">할인율 19%</span>
+            19%
+          </span>
+          <span class="acc-1-discount__price">
+            <span class="blind">할인율 19% 적용시 104,490원</span>
+            104,490원
+          </span>
         </div>
       </div>
-      <div class="acc-1-benefitprice-icon">
-        <i class="fa-solid fa-plus"></i>
-      </div>
+      <!-- accordion 2 최대혜택가 -->
       <div class="acc-2">
-        <div class="acc-2-shipinfo">배송 정보</div>
+        <div class="acc-2-shipinfo">
+          <div class="acc-2-shipinfo__txt">배송정보</div>
+        </div>
       </div>
     </div>
 
@@ -212,7 +220,7 @@
         }
         </script>
 
-    <!-- brand -->
+    <!-- brandhome togo -->
     <div class="brandhome container">
       <div class="brandhome-box">
         <div class="brandhome-box-link">
@@ -230,26 +238,68 @@
       </div>
     </div>
 
-    <div class="detailpage-tab container">
-      <ul class="detailpage-tab__menu">
-        <li class="detailpage-tab__menu-1">
-          <a href="javascript:void(0)" class="detailpage-tab__detail">
+    <!-- detailpage tab -->
+    <div class="dp-tab container">
+      <ul class="dp-tab__menu">
+        <li class="dp-tab__menu-1">
+          <a href="javascript:void(0)" class="dp-tab__detail">
           Detail
         </a>
       </li>
-        <li class="detailpage-tab__menu-2">
-          <a href="javascript:void(0)" class="detailpage-tab__review">
+        <li class="dp-tab__menu-2">
+          <a href="javascript:void(0)" class="dp-tab__review">
           Review
         </a>
       </li>
-        <li class="detailpage-tab__menu-3">
-          <a href="javascript:void(0)" class="detailpage-tab__q&a">
+        <li class="dp-tab__menu-3">
+          <a href="javascript:void(0)" class="dp-tab__q&a">
           Q&A
         </a>
       </li>
       </ul>
     </div>
     
+    <div class="dp-tab__menu1-active">
+
+      <!-- detailpage product detail info -->
+      <div class="dp-pd-info">
+        <ul class="dp-pd-info__list">
+         <li class="dp-pd-info__list-1">
+          <strong>Product Code</strong>
+          <p>302764156</p>
+         </li>
+          <li class="dp-pd-info__list-2">
+          <strong>Material</strong>
+          <p>ACRYL 100%</p>
+          </li>
+          <li class="dp-pd-info__list-3">
+          <strong>Country of origin</strong>
+          <p>EASTEND / KOREA</p>
+          </li>
+        </ul>
+      </div>
+    
+      <!-- detailpage product detail image -->
+      <div class="dp-pd-images">
+        <img class="dp-pd-image" src="./images/dp-detail1.jpg" alt="1번 이미지 아티드 크로쉐 니트 가디건 화이트 모델 전신이미지 정면">
+        <img class="dp-pd-image" src="./images/dp-detail2.jpg" alt="2번 이미지 아티드 크로쉐 니트 가디건 화이트 모델 전신이미지 정면">
+        <img class="dp-pd-image" src="./images/dp-detail3.jpg" alt="3번 이미지 아티드 크로쉐 니트 가디건 화이트 모델 전신이미지 정면 확대">
+        <img class="dp-pd-image" src="./images/dp-detail4.png" alt="4번 이미지 아티드 크로쉐 니트 가디건 화이트 모델 전신이미지 측면">
+        <img class="dp-pd-image" src="./images/dp-detail5.jpg" alt="5번 아티드 크로쉐 니트 가디건 화이트 모델 전신이미지 후면 확대">
+        <img class="dp-pd-image" src="./images/dp-detail6.jpg" alt="6번 아티드 크로쉐 니트 가디건 화이트 모델 전신이미지 정면">
+        <img class="dp-pd-image" src="./images/dp-detail7.jpg" alt="7번 아티드 크로쉐 니트 가디건 화이트 제품 이미지 정면">
+        <img class="dp-pd-image" src="./images/dp-detail8.jpg" alt="8번 아티드 크로쉐 니트 가디건 화이트 제품 이미지 후면">
+        <img class="dp-pd-image" src="./images/dp-detail9.png" alt="9번 아티드 크로쉐 니트 가디건 화이트 제품 이미지 정면 상단 확대">
+        <img class="dp-pd-image" src="./images/dp-detail10.jpg" alt="10번 아티드 크로쉐 니트 가디건 화이트 제품 이미지 후면 상단 확대">
+        <img class="dp-pd-image" src="./images/dp-detail11.jpg" alt="11번 아티드 크로쉐 니트 가디건 화이트 제품 이미지 좌측 상단 확대">
+        <img class="dp-pd-image" src="./images/dp-detail12.jpg" alt="12번 아티드 크로쉐 니트 가디건 화이트 제품 이미지 정면 하단 확대">
+      </div>
+
+      <!-- detailpage product image see more btn -->
+      <div class="dp-img-seemore">
+        <button class="dp-img-seemore__btn"></button>
+      </div>
+  </div>
     
   </body>
 </html>

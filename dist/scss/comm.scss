@@ -159,68 +159,74 @@
   display: flex;
   font-size: 14px;
   font-weight: bold;
+  padding: 19px 27px 19px 0;
+  justify-content: space-between;
+  align-items: center;
   cursor: pointer;
   transition: 0.2s;
-  justify-content: space-between;
-}
-.acc-1-benefitprice {
-  height: 60px;
-  align-items: center;  
-  border-top: 0.5px solid #cfcfcf;
-  // background-color: #fff;
-  .acc-1-discount {
-    .acc-1-discount__percent {
-      font-size: 14px;
-      font-weight: bold;
-      color: #DD0035;
-    }
-    .acc-1-discount__price {
-      font-size: 14px;
-      font-weight: bold;
-      &::after {
-        content: "<i class="fa-solid fa-plus"></i>";
-        position: absolute;
-        top: 0;
-        right: 0;
-        float: right;
-      }
-    }
+  border-top: 1px solid #cfcfcf;
+  background-color: #fff;
+  // "+" icon
+  &::before {
+    content: "\2b";
+    position: absolute;
+    display: inline-block;
+    top: 19px;
+    right: -4px;
+    width: 20px;
+    height: 20px;
+    align-content: center;
+    font-family: "Font Awesome 5 Free";
+    font-size: 15px;
+    font-weight: 900;
   }
 }
+.acc-1-discount {
+  .acc-1-discount__percent {
+    font-size: 14px;
+    font-weight: bold;
+    color: #DD0035;
+    margin-right: 4px;
+   }
+  .acc-1-discount__price {
+     font-size: 14px;
+     font-weight: bold;
+   }
+  }
+
 .active,
 .accordion-1-benefitprice:hover {
   background-color: #ffffff;
 }
 
-// accordion 1 - 배송정보
+// accordion 2 - 배송정보
 .acc-2 {
-  font-size: 14px;
-  font-weight: bold;
-  cursor: pointer;
-}
-.acc-2-shipinfo {
-  display: flex;
-  height: 60px;
-  align-items: center;  
-  justify-content: space-between;
-  border-top: 0.5px solid #cfcfcf;
-  // background-color: #fff;
-}
-
-  
-  // .accordion:after {
-  //   content: '\002B';
-  //   color: #000;
-  //   font-size: 20px;
-  //   font-weight: bold;
-  //   float: right;
-  //   margin-left: 5px;
-  // }
-  
-  // .active:after {
-  //   content: "\2212";
-  // }
-
+    position: relative;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 18.5px 27px 18.5px 0;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+    background-color: #fff;
+    border-top: 1px solid #cfcfcf;
+    border-bottom: 1px solid #cfcfcf;
+    // "+" icon
+    &::before {
+      content: "\2b";
+      position: absolute;
+      display: inline-block;
+      top: 19px;
+      right: -4px;
+      width: 20px;
+      height: 20px;
+      align-content: center;
+      font-family: "Font Awesome 5 Free";
+      font-size: 15px;
+      font-weight: 900;
+    }
+  }
 
 /* Style the accordion panel. Note: hidden by default */
 // .panel {
@@ -233,7 +239,7 @@
 
 // brand home
 .brandhome {
-  margin-top: 16px;
+  margin: 16px 0 24px 0;
 }
 .brandhome-box {
   display: flex;
@@ -241,29 +247,27 @@
   height: 70px;
   border: 1px solid #cfcfcf;
   .brandhomeimg {
-    width: 70px;
-    height: 70px;
+    position: relative;
+    width: 68px;
+    height: 68px;
     object-fit: cover;
   }
 }
 
-
 // tab
-// tab display flex로 수정하기!!
-.detailpage-tab {
-  position: relative;
-  margin-top: 24px;
+.dp-tab {
   background: #fff;
   ul {
-    display: table;
+    display: flex;
     position: relative;
     width: 100%;
     height: 40px;
-    table-layout: fixed;
     color: #cfcfcf;
+
+    font-weight: bold;
+    font-size: 14px;
     border-bottom: 1px solid #cfcfcf;
     li:nth-child(1) {
-      display: table-cell;
       text-align: center;
       vertical-align: middle;
      &:active {
@@ -272,14 +276,31 @@
      }
     }
     li:nth-child(2) {
-      display: table-cell;
       text-align: center;
       vertical-align: middle;
     }
     li:nth-child(3) {
-      display: table-cell; 
       text-align: center;
       vertical-align: middle; 
     }
   } 
 }
+
+// detailpage product detail information
+.dp-pd-info {
+  padding: 38px 80px;
+  font-size: 10px;
+  color: #555;
+  li {
+    display: flex;
+    strong {
+      width: 90px;
+      padding-right: 30px;
+    }
+    }
+  }
+
+  // detailpage product detail image
+  .dp-pd-image {
+    padding-bottom: 8px;
+  }
