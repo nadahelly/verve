@@ -296,33 +296,6 @@ body .txt-product .txt-product__brand {
   font-weight: bold;
 }
 
-/* Style the buttons that are used to open and close the accordion panel */
-.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active,
-.accordion:hover {
-  background-color: #ccc;
-}
-
-/* Style the accordion panel. Note: hidden by default */
-.panel {
-  padding: 0 18px;
-  background-color: white;
-  display: none;
-  overflow: hidden;
-}
-
 .main {
   height: 100px;
 }
@@ -335,11 +308,15 @@ body .txt-product .txt-product__brand {
   padding: 0 20px;
 }
 
-#header {
+.wrap-header {
   position: fixed;
+  z-index: 15;
+}
+
+#header {
+  position: relative;
   top: 0;
   left: 0;
-  width: 100%;
 }
 #header .util-g {
   display: flex;
@@ -369,34 +346,46 @@ body .txt-product .txt-product__brand {
 #header .btn-shoppingbag::before {
   font-size: 64px;
 }
-
-.swiper-container {
-  display: flex;
-  width: 375px;
-  height: 440px;
-}
-.swiper-container .swiper-slide img {
-  display: block;
+#header .sticky {
+  position: fixed;
+  top: 0;
   width: 100%;
 }
 
-.product-info {
-  padding-top: 20px;
+.swiper {
+  width: 375px;
+  height: 440px;
+  margin-top: -44px;
 }
-.product-info .product-info-front {
+.swiper .swiper-slide {
+  display: flex;
+}
+.swiper .swiper-slide .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.prd-info {
+  padding-top: 20px;
+  padding-bottom: 24px;
+}
+.prd-info .prd-info-front {
   position: relative;
 }
-.product-info .product-info-front .product-info-front__brand {
+.prd-info .prd-info-front .prd-info-front__brand {
   font-size: 20px;
   font-weight: 700;
 }
-.product-info .product-info-front .product-info-front__likeicon {
+.prd-info .prd-info-front .prd-info-front__likeicon {
   position: absolute;
   top: -4px;
   right: 0;
   font-size: 24px;
 }
-.product-info .product-info-tit__product {
+.prd-info .prd-info-tit__product {
   display: block;
   margin-top: 4px;
   font-size: 15px;
@@ -406,12 +395,13 @@ body .txt-product .txt-product__brand {
 .prd-rating {
   display: flex;
   position: relative;
-  padding-top: 10px;
+  align-items: center;
+  padding-top: 4px;
   padding-bottom: 8px;
 }
 .prd-rating .prd-rating-star {
-  font-size: 17px;
-  margin-left: 2px;
+  font-size: 16px;
+  margin-right: 8px;
 }
 .prd-rating .prd-rating-link {
   font-size: 12px;
@@ -424,13 +414,97 @@ body .txt-product .txt-product__brand {
   top: 2px;
   right: 0;
   width: 72px;
-  height: 27px;
+  height: 24px;
   font-size: 12px;
   font-weight: bold;
   text-align: center;
   align-items: center;
   background: #555;
   color: #fff;
+}
+
+.prd-price-del {
+  font-weight: bold;
+  color: #cfcfcf;
+}
+
+.prd-price-discount {
+  margin-top: -2px;
+}
+.prd-price-discount .prd-price-discount__percent {
+  font-size: 18px;
+  font-weight: bold;
+  color: #DD0035;
+}
+.prd-price-discount .prd-price-discount__price {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.prd-price-point {
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 6px;
+}
+
+.accordion-1-benefitprice {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 0.5px solid #cfcfcf;
+}
+.accordion-1-benefitprice .accordion {
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.accordion-1-benefitprice .accordion-1-discount__percent {
+  font-size: 14px;
+  font-weight: bold;
+  color: #DD0035;
+}
+.accordion-1-benefitprice .accordion-1-discount__price {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.active,
+.accordion-1-benefitprice:hover {
+  background-color: #ffffff;
+}
+
+.accordion-1-shipinfo {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 0.5px solid #cfcfcf;
+}
+.accordion-1-shipinfo .accordion {
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.brandhome {
+  margin-top: 16px;
+}
+
+.brandhome-box {
+  display: flex;
+  width: 335px;
+  height: 70px;
+  border: 1px solid #cfcfcf;
+}
+.brandhome-box .brandhomeimg {
+  width: 70px;
+  height: 70px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .detailpage-tab {

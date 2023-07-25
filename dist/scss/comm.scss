@@ -10,12 +10,16 @@
 }
 
 // header
+.wrap-header {
+  position: fixed;
+  z-index: 15;
+}
 #header {
   // background: #000;
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
-  width: 100%;
+  // width: 100%;
   .util-g {
     display: flex;
     height: 44px;
@@ -45,37 +49,48 @@
   .btn-shoppingbag::before {
     font-size: 64px;
   }
-}
-
-// slide
-.swiper-container {
-  display: flex;
-  width: 375px;
-  height: 440px;
-  // margin-top: -44px;
-  .swiper-slide img {
-    display: block;
-    width: 100%;
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
   }
 }
 
-// product info
-.product-info {
+
+// swiper slide
+.swiper {
+  width: 375px;
+  height: 440px;
+  margin-top: -44px;
+  .swiper-slide {
+    display: flex;
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+// product front info
+.prd-info {
   padding-top: 20px;
-  .product-info-front {
+  padding-bottom: 24px;
+  .prd-info-front {
     position: relative;
-    .product-info-front__brand {
+    .prd-info-front__brand {
       font-size: 20px;
       font-weight: 700;
     }
-    .product-info-front__likeicon {
+    .prd-info-front__likeicon {
       position: absolute;
       top: -4px;
       right: 0;
       font-size: 24px;
     }
   }
-  .product-info-tit__product {
+  .prd-info-tit__product {
     display: block;
     margin-top: 4px;
     font-size: 15px;
@@ -83,16 +98,16 @@
   }
 }
 
-// product-review
+// product rating / see more review / coupon
 .prd-rating {
   display: flex;
   position: relative;
-  
-  padding-top: 10px;
+  align-items: center;
+  padding-top: 4px;
   padding-bottom: 8px;
   .prd-rating-star {
-    font-size: 17px;
-    margin-left: 2px;
+    font-size: 16px;
+    margin-right: 8px;
   }
   .prd-rating-link {
     font-size: 12px;
@@ -105,7 +120,7 @@
   top: 2px;
   right: 0;
   width: 72px;
-  height: 27px;
+  height: 24px;
   font-size: 12px;
   font-weight: bold;
   text-align: center;
@@ -113,8 +128,118 @@
   background: #555;
   color: #fff;
 }
+// product price info
+.prd-price-del {
+  font-weight: bold;
+  color: #cfcfcf;
+}
+.prd-price-discount {
+  margin-top: -2px;
+  .prd-price-discount__percent {
+    font-size: 18px;
+    font-weight: bold;
+    color: #DD0035;
+  }
+  .prd-price-discount__price {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+.prd-price-point {
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 6px;
+}
+
+
+// accordion 1 - 최대혜택가
+.accordion-1-benefitprice {
+  display: flex;
+  height: 60px;
+  align-items: center;  
+  justify-content: space-between;
+  border-top: 0.5px solid #cfcfcf;
+  // background-color: #fff;
+  .accordion {
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .accordion-1-discount__percent {
+    font-size: 14px;
+    font-weight: bold;
+    color: #DD0035;
+  }
+  .accordion-1-discount__price {
+     font-size: 14px;
+    font-weight: bold;
+  }
+}
+.active,
+.accordion-1-benefitprice:hover {
+  background-color: #ffffff;
+}
+
+// accordion 1 - 배송정보
+.accordion-1-shipinfo {
+  display: flex;
+  height: 60px;
+  align-items: center;  
+  justify-content: space-between;
+  border-top: 0.5px solid #cfcfcf;
+  // background-color: #fff;
+  .accordion {
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+  
+  // .accordion:after {
+  //   content: '\002B';
+  //   color: #000;
+  //   font-size: 20px;
+  //   font-weight: bold;
+  //   float: right;
+  //   margin-left: 5px;
+  // }
+  
+  // .active:after {
+  //   content: "\2212";
+  // }
+
+
+/* Style the accordion panel. Note: hidden by default */
+// .panel {
+//   padding: 0 18px;
+//   background-color: white;
+//   display: none;
+//   overflow: hidden;
+//   transition: max-height 0.2s ease-out;
+// }
+
+// brand home
+.brandhome {
+  margin-top: 16px;
+}
+.brandhome-box {
+  display: flex;
+  width: 335px;
+  height: 70px;
+  border: 1px solid #cfcfcf;
+  .brandhomeimg {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+  }
+}
+
 
 // tab
+// tab display flex로 수정하기!!
 .detailpage-tab {
   position: relative;
   margin-top: 24px;
