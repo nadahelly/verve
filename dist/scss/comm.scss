@@ -81,3 +81,68 @@
     }
   }
 }
+
+// main slide
+.main-slide{
+  .splash {
+  position: relative;
+  z-index: 0;
+  width: 375px;
+  height: 667px;
+  background-image: url(/images/main/main1.jpg);
+    .verve-box {
+      position: absolute;
+      z-index: 2;
+      top: 388px;
+      left: 18px;
+      width: 400px;
+      height: 100px;
+      background-color: white;
+      animation-name: ani-verve;
+      animation-duration: 6s;
+      animation-fill-mode: both;
+      }
+    .verve-box2 {
+      position: absolute;
+      z-index: 2;
+      top: 500px;
+      left: 18px;
+      width: 400px;
+      height: 100px;
+      background-color: white;
+      animation-name: ani-verve2;
+      animation-duration: 6s;
+      animation-fill-mode: both;
+    }
+  }
+}
+.main-slide {
+  .splash-bg {
+  position: absolute;
+  z-index: 1;
+  left: 363px;
+  width: 20px;
+  height: 667px;
+  background-color: #000;
+  }
+ .splash-bg2 {
+  position: absolute;
+  z-index: 1;
+  width: 20px;
+  height: 667px;
+  background-color: #000;
+  }
+}
+@keyframes ani-verve {
+  0% {left: -1000px;}
+  20% {left: -500px;}
+  80% {left: 1000px;}
+  100% {left: 2000px;}
+}
+@keyframes ani-verve2 {
+  0% {left: -1000px;}
+  20% {left: -500px;}
+  80% {left: 1000px;}
+  100% {left: 2000px;}
+}
+
