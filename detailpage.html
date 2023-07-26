@@ -176,8 +176,8 @@
         <p>최대혜택가 피그마ing....</p>
       </div> -->
 
-    <!-- accordion -->
-    <div class="accordion container">
+    <!-- accordion-1 -->
+    <div class="accordion-1 container">
       <!-- accordion 1 최대혜택가 -->
       <div class="acc-1">
         <div class="acc-1-benefitprice">
@@ -194,7 +194,7 @@
           </span>
         </div>
       </div>
-      <!-- accordion 2 최대혜택가 -->
+      <!-- accordion 2 배송정보 -->
       <div class="acc-2">
         <div class="acc-2-shipinfo">
           <div class="acc-2-shipinfo__txt">배송정보</div>
@@ -259,6 +259,7 @@
       </ul>
     </div>
     
+    <!-- detail tab active fullpage -->
     <div class="dp-tab__menu1-active">
 
       <!-- detailpage product detail info -->
@@ -295,11 +296,116 @@
         <img class="dp-pd-image" src="./images/dp-detail12.jpg" alt="12번 아티드 크로쉐 니트 가디건 화이트 제품 이미지 정면 하단 확대">
       </div>
 
-      <!-- detailpage product image see more btn -->
-      <div class="dp-img-seemore">
-        <button class="dp-img-seemore__btn"></button>
+      <!-- detailpage product image seemore btn -->
+      <div class="dp-img-seemore-wrap">
+        <div class="dp-img-seemore-full">
+          <button type="button" onclick="show-prd-img(this)" class="dp-img-seemore__btn">상품설명 닫기</button>
+        </div>
       </div>
+    
   </div>
     
+  <!-- accordion-2  -->
+  <div class="accordion-2 container">
+    <!-- accordion 3 상품 사이즈 정보 -->
+    <div class="acc-3">
+      <div class="acc-3-shipinfo">
+        <div class="acc-3-shipinfo__txt">상품 사이즈 정보</div>
+      </div>
+    </div>
+    <!-- accordion 4 교환/환불 배송 정보 -->
+    <div class="acc-4">
+      <div class="acc-4-shipinfo">
+        <div class="acc-4-shipinfo__txt">교환/환불 배송 정보</div>
+      </div>
+    </div>
+    <!-- accordion 5 상품 필수 정보 -->
+    <div class="acc-5">
+      <div class="acc-5-shipinfo">
+        <div class="acc-5-shipinfo__txt">상품 필수 정보</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- More by BRAND list : Recommend Product list--> 
+  <div class="recommend_prd_lst-1">
+    <div class="rpl-1-tit">More by BRAND</div>
+    <div class="rpl-1-swiper-wrap">
+      <ul class="rpl-1-swiper">
+        <li class="rpl-1-slide-active">
+          <a href="#" class="slide-wrap">
+            <div class="thumb_area">
+              <span class="thumb">
+                <img src="./images/morebybrand1.jpg" alt="">
+              </span>
+            </div>
+            <div class="info_area">
+              <span class="brand">A;td</span>
+              <span class="product">Shirring Sleeveless Top</span>
+              <div class="price-wrap">
+                <span class="price">63,700원</span>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="rpl-1-slide-next">
+          <a href="#" class="slide-wrap">
+            <div class="thumb_area">
+              <span class="thumb">
+                <img src="./images/morebybrand2.jpg" alt="">
+              </span>
+            </div>
+            <div class="info_area">
+              <span class="brand">A;td</span>
+              <span class="product">Cargo Banding Skirt</span>
+              <div class="price-wrap">
+                <span class="price">87,200원 </span>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="rpl-1-slide">
+          <a href="#" class="slide-wrap">
+            <div class="thumb_area">
+              <span class="thumb">
+                <img src="./images/morebybrand3.jpg" alt="">
+              </span>
+            </div>
+            <div class="info_area">
+              <span class="brand">A;td</span>
+              <span class="product">Sleeveless Long Onepiece</span>
+              <div class="price-wrap">
+                <span class="price">95,200원</span>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- <div class="swiper2 mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./images/dp-slide1.jpg" alt="slide-img1"></div>
+        <div class="swiper-slide"><img src="./images/dp-slide2.jpg" alt="slide-img2"></div>
+        <div class="swiper-slide"><img src="./images/dp-slide3.jpg" alt="slide-img3"></div>
+        <div class="swiper-slide"><img src="./images/dp-slide4.jpg" alt="slide-img4"></div>
+      </div>
+    </div> -->
+  </div>
+
+  <!-- // 추천/연관 상품 swiper
+  <script>
+    $('.js-prod-detail-prod').each(function() {
+      var prodDetailFoldSwiper;
+      prodDetailFoldSwiper = new Swiper(this , {
+        init: false,
+        slidesPerView: 2.1,
+        spaceBetween: 0,
+        speed: 600,
+      });
+      prodDetailFoldSwiper.init();
+    });
+  </script> -->
+
+
   </body>
 </html>
