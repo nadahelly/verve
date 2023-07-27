@@ -438,27 +438,39 @@
 }
 
 // More by BRAND list : Recommend Product list
+// 정리필요
 .recommend_prd_lst-1 {
-  padding-bottom: 40px;
+  display: block;
+  padding-left: 20px;
   .rpl-tit {
     font-family: 'Noto Serif KR', serif;
     font-size: 15px;
     font-weight: 700;
     padding-bottom: 8px;
   }
-  .rpl-swiper {
+  .rpl-slides {
     display: flex;
-    ul {
-      width: 136px;
-    }
-    .thumb {
+    width: 136px;
+    .rpl-swiper {
       padding-right: 16px;
-      padding-bottom: 12px;
     }
   }
   .info_area {
-    .product {
+    width: 136px; 
+    .info_area_brand__name {
+      font-size: 13px;
+      font-weight: 500;
+    }
+    .info_area_product_name {
+      white-space: nowrap; 
+      font-size: 12px;
+      font-weight: 400;
       overflow: hidden;
+      text-overflow: ellipsis; 
+    }
+    .info_area_price {
+      font-size: 12px;
+      font-weight: 500;
     }
   }
 }

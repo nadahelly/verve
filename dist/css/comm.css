@@ -1060,7 +1060,8 @@ body .wrap {
 }
 
 .recommend_prd_lst-1 {
-  padding-bottom: 40px;
+  display: block;
+  padding-left: 20px;
 }
 .recommend_prd_lst-1 .rpl-tit {
   font-family: "Noto Serif KR", serif;
@@ -1068,16 +1069,28 @@ body .wrap {
   font-weight: 700;
   padding-bottom: 8px;
 }
-.recommend_prd_lst-1 .rpl-swiper {
+.recommend_prd_lst-1 .rpl-slides {
   display: flex;
-}
-.recommend_prd_lst-1 .rpl-swiper ul {
   width: 136px;
 }
-.recommend_prd_lst-1 .rpl-swiper .thumb {
+.recommend_prd_lst-1 .rpl-slides .rpl-swiper {
   padding-right: 16px;
-  padding-bottom: 12px;
 }
-.recommend_prd_lst-1 .info_area .product {
+.recommend_prd_lst-1 .info_area {
+  width: 136px;
+}
+.recommend_prd_lst-1 .info_area .info_area_brand__name {
+  font-size: 13px;
+  font-weight: 500;
+}
+.recommend_prd_lst-1 .info_area .info_area_product_name {
+  white-space: nowrap;
+  font-size: 12px;
+  font-weight: 400;
   overflow: hidden;
+  text-overflow: ellipsis;
+}
+.recommend_prd_lst-1 .info_area .info_area_price {
+  font-size: 12px;
+  font-weight: 500;
 }/*# sourceMappingURL=comm.css.map */
