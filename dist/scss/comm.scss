@@ -4,6 +4,7 @@
 // comm.scss -
 // 공통요소 : 헤더, 풋터, 버튼, 아이콘, 박스
 
+@import "_item_list";
 // 공통
 .container {
   margin: 0 20px;
@@ -58,7 +59,7 @@
 
 #main {
   bottom: 10px;
-  h2 {
+  .container-txt {
     padding: 9.3px;
     text-align: center;
     letter-spacing: 1px;
@@ -84,6 +85,9 @@
 
 // main slide
 .main-slide{
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
   .splash {
   position: relative;
   z-index: 0;
