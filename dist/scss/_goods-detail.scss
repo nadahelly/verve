@@ -17,10 +17,10 @@
   position: fixed;
 }
 #header {
-  // background: #000;
   position: relative;
   top: 0;
   left: 0;
+  z-index: 100;
   // width: 100%;
   .util-g {
     display: flex;
@@ -29,8 +29,10 @@
     justify-content: space-between;
   }
   .btn-g {
+    display: block;
     width: 44px;
     height: 44px;
+    color: #fff;
     &::before {
       font-size: 20px;
       font-family: "Font Awesome 6 Free";
@@ -48,7 +50,7 @@
     font-weight: 900;
   }
   .btn-shoppingbag::before {
-    font-size: 64px;
+    font-size: 36px;
   }
   .sticky {
     position: fixed;
@@ -243,17 +245,27 @@
 .brandhome {
   margin: 16px 0 24px 0;
 }
-.brandhome-box {
-  display: flex;
+.bh-box {
   width: 335px;
   height: 70px;
   border: 1px solid #cfcfcf;
-  .brandhomeimg {
-    position: relative;
-    width: 68px;
-    height: 68px;
-    object-fit: cover;
-  }
+}
+.bh-box-link-tit {
+  display: inline-flex;
+  flex-direction: column;
+}
+.bh-box-link-tit__brand {
+  display: block;
+  width: 195px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.brandhomeimg {
+  position: relative;
+  display: block;
+  width: 68px;
+  height: 68px;
+  object-fit: cover;
 }
 
 // tab
@@ -290,7 +302,7 @@
 
 // detailpage product detail information
 .dp-pd-info {
-  padding: 38px 80px;
+  padding: 38px 70px;
   font-size: 10px;
   color: #555;
   li {
@@ -450,9 +462,10 @@
   }
   .rpl-slides {
     display: flex;
-    width: 136px;
     .rpl-swiper {
-      padding-right: 16px;
+      display: block;
+      width: 136px;
+      margin-right: 16px;
     }
   }
   .info_area {
@@ -462,6 +475,7 @@
       font-weight: 500;
     }
     .info_area_product_name {
+      display: block;
       white-space: nowrap; 
       font-size: 12px;
       font-weight: 400;
