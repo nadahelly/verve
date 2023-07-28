@@ -6,3 +6,5 @@ var swiper = new Swiper(".slide-g", {
     clickable: true,
   },
 });
+
+var swiper = new Swiper(".sale-slide", {});
