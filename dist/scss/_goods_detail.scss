@@ -1,0 +1,488 @@
+@charset "UFT-8";
+@import "mixin", "variables", "fonts", "reset", "main", "contents";
+
+// comm.scss -
+// 공통요소 : 헤더, 풋터, 버튼, 아이콘, 박스
+
+// 공통
+.wrap {
+  position: relative;
+}
+.container {
+  padding: 0 20px;
+}
+
+// header
+.wrap-header {
+  position: fixed;
+}
+#header {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  // width: 100%;
+  .util-g {
+    display: flex;
+    height: 44px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .btn-g {
+    display: block;
+    width: 44px;
+    height: 44px;
+    color: #fff;
+    &::before {
+      font-size: 20px;
+      font-family: "Font Awesome 6 Free";
+    }
+  }
+  .right-util {
+    display: flex;
+  }
+  .btn-back::before {
+    content: "\f104";
+    font-weight: 900;
+  }
+  .btn-search::before {
+    content: "\f002";
+    font-weight: 900;
+  }
+  .btn-shoppingbag::before {
+    font-size: 36px;
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+}
+
+// swiper slide
+.swiper {
+  width: 375px;
+  height: 440px;
+  margin-top: -44px;
+  .swiper-slide {
+    display: flex;
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+// product front info
+.prd-info {
+  padding-top: 20px;
+  padding-bottom: 24px;
+  .prd-info-front {
+    position: relative;
+    .prd-info-front__brand {
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .prd-info-front__likeicon {
+      position: absolute;
+      top: -4px;
+      right: 0;
+      font-size: 24px;
+    }
+  }
+  .prd-info-tit__product {
+    display: block;
+    margin-top: 4px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+
+// product rating / see more review / coupon
+.prd-rating {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding-top: 4px;
+  padding-bottom: 8px;
+  .prd-rating-star {
+    font-size: 16px;
+    margin-right: 8px;
+  }
+  .prd-rating-link {
+    font-size: 12px;
+    height: 14px;
+    border-bottom: 1px solid #000;
+  }
+}
+.prd-coupon {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  width: 72px;
+  height: 24px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  background: #555;
+  color: #fff;
+}
+// product price info
+.prd-price-del {
+  font-weight: bold;
+  color: #cfcfcf;
+}
+.prd-price-discount {
+  margin-top: -2px;
+  .prd-price-discount__percent {
+    font-size: 18px;
+    font-weight: bold;
+    color: #dd0035;
+  }
+  .prd-price-discount__price {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+.prd-price-point {
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 6px;
+}
+
+// accordion wrap 1
+// accordion 1 최대혜택가
+.acc-1 {
+  position: relative;
+  display: flex;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 19px 27px 19px 0;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+  border-top: 1px solid #cfcfcf;
+  background-color: #fff;
+  // "+" icon
+  &::before {
+    content: "\2b";
+    position: absolute;
+    display: inline-block;
+    top: 19px;
+    right: -4px;
+    width: 20px;
+    height: 20px;
+    align-content: center;
+    font-family: "Font Awesome 5 Free";
+    font-size: 15px;
+    font-weight: 900;
+  }
+}
+.acc-1-discount {
+  .acc-1-discount__percent {
+    font-size: 14px;
+    font-weight: bold;
+    color: #dd0035;
+    margin-right: 4px;
+  }
+  .acc-1-discount__price {
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
+.active,
+.accordion-1-benefitprice:hover {
+  background-color: #ffffff;
+}
+
+// accordion 2 배송정보
+.acc-2 {
+  position: relative;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 18.5px 27px 18.5px 0;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+  background-color: #fff;
+  border-top: 1px solid #cfcfcf;
+  border-bottom: 1px solid #cfcfcf;
+  // "+" icon
+  &::before {
+    content: "\2b";
+    position: absolute;
+    display: inline-block;
+    top: 19px;
+    right: -4px;
+    width: 20px;
+    height: 20px;
+    align-content: center;
+    font-family: "Font Awesome 5 Free";
+    font-size: 15px;
+    font-weight: 900;
+  }
+}
+
+/* Style the accordion panel. Note: hidden by default */
+// .panel {
+//   padding: 0 18px;
+//   background-color: white;
+//   display: none;
+//   overflow: hidden;
+//   transition: max-height 0.2s ease-out;
+// }
+
+// brand home
+.brandhome {
+  margin: 16px 0 24px 0;
+}
+.bh-box {
+  width: 335px;
+  height: 70px;
+  border: 1px solid #cfcfcf;
+}
+.bh-box-link-tit {
+  display: inline-flex;
+  flex-direction: column;
+}
+.bh-box-link-tit__brand {
+  display: block;
+  width: 195px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.brandhomeimg {
+  position: relative;
+  display: block;
+  width: 68px;
+  height: 68px;
+  object-fit: cover;
+}
+
+// tab
+.dp-tab {
+  background: #fff;
+  ul {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: #cfcfcf;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    border-bottom: 1px solid #cfcfcf;
+    li:nth-child(1) {
+      text-align: center;
+      vertical-align: middle;
+      &:active {
+        color: #000;
+        border-bottom: 1px solid #000;
+      }
+    }
+    li:nth-child(2) {
+      text-align: center;
+      vertical-align: middle;
+    }
+    li:nth-child(3) {
+      text-align: center;
+      vertical-align: middle;
+    }
+  }
+}
+
+// detailpage product detail information
+.dp-pd-info {
+  padding: 38px 70px;
+  font-size: 10px;
+  color: #555;
+  li {
+    display: flex;
+    strong {
+      width: 90px;
+      padding-right: 30px;
+    }
+  }
+}
+
+// detailpage product detail image
+.dp-pd-image {
+  padding-bottom: 8px;
+}
+
+// <!-- detailpage product image seemore btn -->
+.dp-img-seemore-wrap {
+  width: 375px;
+  height: 132px;
+  position: relative;
+}
+// seemore btn gradient
+.dp-img-seemore-full {
+  display: block;
+  margin: 0 20px;
+  &::before {
+    display: block;
+    content: "";
+    height: 76px;
+    margin: 0 -20px;
+    margin-top: -76px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff);
+  }
+  .dp-img-seemore__btn {
+    width: 100%;
+    display: block;
+    height: 56px;
+    border: 1px solid #000;
+    background-color: #fff;
+    padding: 12px 0;
+    font-size: 15px;
+    font-weight: 700;
+    &::after {
+      content: "\f078";
+      display: inline-block;
+      margin-left: 4px;
+      width: 20px;
+      height: 20px;
+      font-weight: 900;
+      font-family: "Font Awesome 6 Free";
+    }
+  }
+}
+// <i class="fa-solid fa-chevron-up"></i> = "\f077"
+// <i class="fa-solid fa-chevron-down"></i> = "\f078"
+
+// accordion wrap 2
+.accordion-2 {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  // accordion 3 상품 사이즈 정보
+  .acc-3 {
+    position: relative;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 18.5px 27px 18.5px 0;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+    background-color: #fff;
+    border-top: 1px solid #cfcfcf;
+    border-bottom: 1px solid #cfcfcf;
+    // "+" icon
+    &::before {
+      content: "\2b";
+      position: absolute;
+      display: inline-block;
+      top: 19px;
+      right: -4px;
+      width: 20px;
+      height: 20px;
+      align-content: center;
+      font-family: "Font Awesome 5 Free";
+      font-size: 15px;
+      font-weight: 900;
+    }
+  }
+  // accordion 4 교환/환불 배송 정보
+  .acc-4 {
+    position: relative;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 19px 27px 19px 0;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+    background-color: #fff;
+    border-bottom: 1px solid #cfcfcf;
+    // "+" icon
+    &::before {
+      content: "\2b";
+      position: absolute;
+      display: inline-block;
+      top: 19px;
+      right: -4px;
+      width: 20px;
+      height: 20px;
+      align-content: center;
+      font-family: "Font Awesome 5 Free";
+      font-size: 15px;
+      font-weight: 900;
+    }
+  }
+  // accordion 5 상품 필수 정보
+  .acc-5 {
+    position: relative;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 19px 27px 19px 0;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+    background-color: #fff;
+    border-bottom: 1px solid #cfcfcf;
+    // "+" icon
+    &::before {
+      content: "\2b";
+      position: absolute;
+      display: inline-block;
+      top: 19px;
+      right: -4px;
+      width: 20px;
+      height: 20px;
+      align-content: center;
+      font-family: "Font Awesome 5 Free";
+      font-size: 15px;
+      font-weight: 900;
+    }
+  }
+}
+
+// More by BRAND list : Recommend Product list
+// 정리필요
+.recommend_prd_lst-1 {
+  display: block;
+  padding-left: 20px;
+  .rpl-tit {
+    font-family: "Noto Serif KR", serif;
+    font-size: 15px;
+    font-weight: 700;
+    padding-bottom: 8px;
+  }
+  .rpl-slides {
+    display: flex;
+    .rpl-swiper {
+      display: block;
+      width: 136px;
+      margin-right: 16px;
+    }
+  }
+  .info_area {
+    width: 136px;
+    .info_area_brand__name {
+      font-size: 13px;
+      font-weight: 500;
+    }
+    .info_area_product_name {
+      display: block;
+      white-space: nowrap;
+      font-size: 12px;
+      font-weight: 400;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .info_area_price {
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }
+}
