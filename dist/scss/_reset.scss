@@ -133,7 +133,7 @@ body {
   background: #fff;
   font-size: 14px;
   line-height: 1.5;
-  font-family: "Noto Sans KR", "Malgun Gothic", "맑은 고딕", sans-serif;
+  font-family: "Noto Sans KR", "NotoSerifKR","Malgun Gothic", "맑은 고딕", sans-serif;
   color: #111;
 }
 
@@ -287,4 +287,18 @@ legend {
     clear: both;
     content: "";
   }
+}
+
+body {
+  // background: url(../../images/dp.jpg) 0 0px no-repeat;
+  // background-size: 100% auto;
+  .wrap {
+    opacity: 0.7;
+  }
+//   .txt-product {
+//     .txt-product__brand {
+//       font-size: 20px;
+//       font-weight: bold;
+//     }
+//   }
 }

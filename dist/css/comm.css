@@ -1,28 +1,63 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Poppins";
+  font-family: "NotoSansKR";
+  font-weight: 100;
+  src: url(../fonts/NotoSansKR-Thin.woff) format("woff");
+}
+@font-face {
+  font-family: "NotoSansKR";
   font-weight: 300;
-  src: url(../font/Poppins-Light.woff) format("woff");
+  src: url(../fonts/NotoSansKR-Light.woff) format("woff");
 }
 @font-face {
-  font-family: "Poppins";
+  font-family: "NotoSansKR";
   font-weight: 400;
-  src: url(../fonts/Poppins-Regular.woff) format("woff");
+  src: url(../fonts/NotoSansKR-Regular.woff) format("woff");
 }
 @font-face {
-  font-family: "Poppins";
+  font-family: "NotoSansKR";
   font-weight: 500;
-  src: url(../fonts/Poppins-Medium.woff) format("woff");
+  src: url(../fonts/NotoSansKR-Medium.woff) format("woff");
 }
 @font-face {
-  font-family: "Poppins";
-  font-weight: 600;
-  src: url(../fonts/Poppins-SemiBold.woff) format("woff");
-}
-@font-face {
-  font-family: "Poppins";
+  font-family: "NotoSansKR";
   font-weight: 700;
-  src: url(../fonts/Poppins-Bold.woff) format("woff");
+  src: url(../fonts/NotoSansKR-Bold.woff) format("woff");
+}
+@font-face {
+  font-family: "NotoSansKR";
+  font-weight: 900;
+  src: url(../fonts/NotoSansKR-Black.woff) format("woff");
+}
+@font-face {
+  font-family: "NotoSerifKR";
+  font-weight: 300;
+  src: url(../fonts/NotoSerifKR-Light.woff) format("woof");
+}
+@font-face {
+  font-family: "NotoSerifKR";
+  font-weight: 400;
+  src: url(../fonts/NotoSerifKR-Regular.woff) format("woof");
+}
+@font-face {
+  font-family: "NotoSerifKR";
+  font-weight: 500;
+  src: url(../fonts/NotoSerifKR-Medium.woff) format("woof");
+}
+@font-face {
+  font-family: "NotoSerifKR";
+  font-weight: 600;
+  src: url(../fonts/NotoSerifKR-SemiBold.woff) format("woof");
+}
+@font-face {
+  font-family: "NotoSerifKR";
+  font-weight: 700;
+  src: url(../fonts/NotoSerifKR-Bold.woff) format("woof");
+}
+@font-face {
+  font-family: "NotoSerifKR";
+  font-weight: 900;
+  src: url(../fonts/NotoSerifKR-Black.woff) format("woof");
 }
 /* reset */
 body,
@@ -138,7 +173,7 @@ body {
   background: #fff;
   font-size: 14px;
   line-height: 1.5;
-  font-family: "Noto Sans KR", "Malgun Gothic", "맑은 고딕", sans-serif;
+  font-family: "Noto Sans KR", "NotoSerifKR", "Malgun Gothic", "맑은 고딕", sans-serif;
   color: #111;
 }
 
@@ -280,6 +315,10 @@ legend {
   content: "";
 }
 
+body .wrap {
+  opacity: 0.7;
+}
+
 .main {
   height: 100px;
 }
@@ -288,35 +327,770 @@ legend {
   height: 300px;
 }
 
+@font-face {
+  font-family: "NotoSansKR";
+  font-weight: 100;
+  src: url(../fonts/NotoSansKR-Thin.woff) format("woff");
+}
+@font-face {
+  font-family: "NotoSansKR";
+  font-weight: 300;
+  src: url(../fonts/NotoSansKR-Light.woff) format("woff");
+}
+@font-face {
+  font-family: "NotoSansKR";
+  font-weight: 400;
+  src: url(../fonts/NotoSansKR-Regular.woff) format("woff");
+}
+@font-face {
+  font-family: "NotoSansKR";
+  font-weight: 500;
+  src: url(../fonts/NotoSansKR-Medium.woff) format("woff");
+}
+@font-face {
+  font-family: "NotoSansKR";
+  font-weight: 700;
+  src: url(../fonts/NotoSansKR-Bold.woff) format("woff");
+}
+@font-face {
+  font-family: "NotoSansKR";
+  font-weight: 900;
+  src: url(../fonts/NotoSansKR-Black.woff) format("woff");
+}
+@font-face {
+  font-family: "NotoSerifKR";
+  font-weight: 300;
+  src: url(../fonts/NotoSerifKR-Light.woff) format("woof");
+}
+@font-face {
+  font-family: "NotoSerifKR";
+  font-weight: 400;
+  src: url(../fonts/NotoSerifKR-Regular.woff) format("woof");
+}
+@font-face {
+  font-family: "NotoSerifKR";
+  font-weight: 500;
+  src: url(../fonts/NotoSerifKR-Medium.woff) format("woof");
+}
+@font-face {
+  font-family: "NotoSerifKR";
+  font-weight: 600;
+  src: url(../fonts/NotoSerifKR-SemiBold.woff) format("woof");
+}
+@font-face {
+  font-family: "NotoSerifKR";
+  font-weight: 700;
+  src: url(../fonts/NotoSerifKR-Bold.woff) format("woof");
+}
+@font-face {
+  font-family: "NotoSerifKR";
+  font-weight: 900;
+  src: url(../fonts/NotoSerifKR-Black.woff) format("woof");
+}
+/* reset */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+textarea,
+p,
+blockquote,
+th,
+td,
+input,
+select,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+fieldset,
+img {
+  border: 0 none;
+}
+
+dl,
+ul,
+ol,
+menu,
+li {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+input,
+select,
+textarea {
+  font-size: 100%;
+  vertical-align: middle;
+}
+
+button {
+  font-size: 100%;
+  vertical-align: middle;
+  border: 0 none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+}
+
+/* 뷰표트 변환시 폰트크기 자동확대 방지 */
+input[type=text], input[type=password], input[type=submit], input[type=search] {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+input:checked[type=checkbox] {
+  background-color: #666;
+  -webkit-appearance: checkbox;
+}
+
+button {
+  -webkit-appearance: button;
+  border-radius: 0;
+}
+
+input[type=button], input[type=submit], input[type=reset], input[type=file] {
+  -webkit-appearance: button;
+  border-radius: 0;
+}
+input[type=search]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+/* 기본 폰트 설정 */
+/* mobile */
+body {
+  background: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: "Noto Sans KR", "NotoSerifKR", "Malgun Gothic", "맑은 고딕", sans-serif;
+  color: #111;
+}
+
+/* desktop */
+@media screen and (min-width: 1280px) {
+  body {
+    font-size: 16px;
+  }
+}
+/* color값은 디자인가이드에 맞게사용 */
+a {
+  color: #333;
+  text-decoration: none;
+}
+a:active, a:hover {
+  text-decoration: none;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+hr {
+  display: none;
+}
+
+input[type=password] {
+  font-family: "Malgun Gothic";
+}
+
+/* 웹폰트 사용시 점이 안보임 - 기본 폰트 사용  */
+/* skipnavigation */
+#u-skip {
+  position: relative;
+  z-index: 3000;
+}
+#u-skip a {
+  position: absolute;
+  top: -35px;
+  left: 0;
+  right: 0;
+  display: inline-block;
+  padding: 7px 10px 5px;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  opacity: 0;
+}
+#u-skip a:focus {
+  top: 0;
+  opacity: 1;
+  z-index: 1000;
+}
+
+/* 이미지 스프라이트 */
+.img-g {
+  display: inline-block;
+  overflow: hidden;
+  background: url(../../images/comm/img-comm.png) no-repeat;
+  vertical-align: top;
+}
+
+/* 이미지 */
+/* global */
+.ir-pm {
+  display: block;
+  overflow: hidden;
+  font-size: 0px;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+/* 사용된 이미지내 의미있는 텍스트의 대체텍스트를 제공할때 */
+.ir-wa {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  z-index: -10;
+  width: 100%;
+  height: 100%;
+}
+
+/* 중요한 이미지 대체텍스트로 이미지off시에도 대체 텍스트를 보여주고자 할때 */
+.blind,
+caption,
+legend {
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+/* 대체텍스트가 아닌 접근성을 위한 숨김텍스트를 제공할때 */
+.f_l {
+  float: left;
+}
+
+.f_r {
+  float: right;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.tbl {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 테이블 초기화 */
+.clearfix {
+  display: block;
+  overflow: visible;
+  width: auto;
+  clear: both;
+  zoom: 1;
+}
+.clearfix:after {
+  display: block;
+  visibility: hidden;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  content: "";
+}
+
+body .wrap {
+  opacity: 0.7;
+}
+
+.main {
+  height: 100px;
+}
+
+.contents {
+  height: 300px;
+}
+
+.wrap {
+  position: relative;
+}
+
 .container {
-  padding: 0 4%;
+  padding: 0 20px;
+}
+
+.wrap-header {
+  position: fixed;
 }
 
 #header {
-  border-bottom: 1px solid #000;
+  position: relative;
+  top: 0;
+  left: 0;
 }
-#header .inner {
+#header .util-g {
   display: flex;
+  height: 44px;
   align-items: center;
   justify-content: space-between;
-  height: 70px;
 }
-#header .lst-util {
-  display: flex;
+#header .btn-g {
+  width: 44px;
+  height: 44px;
 }
-#header .lst-util .btn-g {
-  width: 40px;
-  height: 70px;
-}
-#header .lst-util .btn-g::before {
+#header .btn-g::before {
   font-size: 20px;
   font-family: "Font Awesome 6 Free";
 }
-#header .lst-util .btn-search::before {
+#header .right-util {
+  display: flex;
+}
+#header .btn-back::before {
+  content: "\f104";
+  font-weight: 900;
+}
+#header .btn-search::before {
   content: "\f002";
   font-weight: 900;
 }
-#header .lst-util .btn-burger::before {
-  content: "\f007";
+#header .btn-shoppingbag::before {
+  font-size: 64px;
+}
+#header .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.swiper {
+  width: 375px;
+  height: 440px;
+  margin-top: -44px;
+}
+.swiper .swiper-slide {
+  display: flex;
+}
+.swiper .swiper-slide .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.prd-info {
+  padding-top: 20px;
+  padding-bottom: 24px;
+}
+.prd-info .prd-info-front {
+  position: relative;
+}
+.prd-info .prd-info-front .prd-info-front__brand {
+  font-size: 20px;
+  font-weight: 700;
+}
+.prd-info .prd-info-front .prd-info-front__likeicon {
+  position: absolute;
+  top: -4px;
+  right: 0;
+  font-size: 24px;
+}
+.prd-info .prd-info-tit__product {
+  display: block;
+  margin-top: 4px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.prd-rating {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding-top: 4px;
+  padding-bottom: 8px;
+}
+.prd-rating .prd-rating-star {
+  font-size: 16px;
+  margin-right: 8px;
+}
+.prd-rating .prd-rating-link {
+  font-size: 12px;
+  height: 14px;
+  border-bottom: 1px solid #000;
+}
+
+.prd-coupon {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  width: 72px;
+  height: 24px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  background: #555;
+  color: #fff;
+}
+
+.prd-price-del {
+  font-weight: bold;
+  color: #cfcfcf;
+}
+
+.prd-price-discount {
+  margin-top: -2px;
+}
+.prd-price-discount .prd-price-discount__percent {
+  font-size: 18px;
+  font-weight: bold;
+  color: #DD0035;
+}
+.prd-price-discount .prd-price-discount__price {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.prd-price-point {
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 6px;
+}
+
+.acc-1 {
+  position: relative;
+  display: flex;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 19px 27px 19px 0;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+  border-top: 1px solid #cfcfcf;
+  background-color: #fff;
+}
+.acc-1::before {
+  content: "+";
+  position: absolute;
+  display: inline-block;
+  top: 19px;
+  right: -4px;
+  width: 20px;
+  height: 20px;
+  align-content: center;
+  font-family: "Font Awesome 5 Free";
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.acc-1-discount .acc-1-discount__percent {
+  font-size: 14px;
+  font-weight: bold;
+  color: #DD0035;
+  margin-right: 4px;
+}
+.acc-1-discount .acc-1-discount__price {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.active,
+.accordion-1-benefitprice:hover {
+  background-color: #ffffff;
+}
+
+.acc-2 {
+  position: relative;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 18.5px 27px 18.5px 0;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+  background-color: #fff;
+  border-top: 1px solid #cfcfcf;
+  border-bottom: 1px solid #cfcfcf;
+}
+.acc-2::before {
+  content: "+";
+  position: absolute;
+  display: inline-block;
+  top: 19px;
+  right: -4px;
+  width: 20px;
+  height: 20px;
+  align-content: center;
+  font-family: "Font Awesome 5 Free";
+  font-size: 15px;
+  font-weight: 900;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.brandhome {
+  margin: 16px 0 24px 0;
+}
+
+.brandhome-box {
+  display: flex;
+  width: 335px;
+  height: 70px;
+  border: 1px solid #cfcfcf;
+}
+.brandhome-box .brandhomeimg {
+  position: relative;
+  width: 68px;
+  height: 68px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.dp-tab {
+  background: #fff;
+}
+.dp-tab ul {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 40px;
+  color: #cfcfcf;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  border-bottom: 1px solid #cfcfcf;
+}
+.dp-tab ul li:nth-child(1) {
+  text-align: center;
+  vertical-align: middle;
+}
+.dp-tab ul li:nth-child(1):active {
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+.dp-tab ul li:nth-child(2) {
+  text-align: center;
+  vertical-align: middle;
+}
+.dp-tab ul li:nth-child(3) {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.dp-pd-info {
+  padding: 38px 80px;
+  font-size: 10px;
+  color: #555;
+}
+.dp-pd-info li {
+  display: flex;
+}
+.dp-pd-info li strong {
+  width: 90px;
+  padding-right: 30px;
+}
+
+.dp-pd-image {
+  padding-bottom: 8px;
+}
+
+.dp-img-seemore-wrap {
+  width: 375px;
+  height: 132px;
+  position: relative;
+}
+
+.dp-img-seemore-full {
+  display: block;
+  margin: 0 20px;
+}
+.dp-img-seemore-full::before {
+  display: block;
+  content: "";
+  height: 76px;
+  margin: 0 -20px;
+  margin-top: -76px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff);
+}
+.dp-img-seemore-full .dp-img-seemore__btn {
+  width: 100%;
+  display: block;
+  height: 56px;
+  border: 1px solid #000;
+  background-color: #fff;
+  padding: 12px 0;
+  font-size: 15px;
+  font-weight: 700;
+}
+.dp-img-seemore-full .dp-img-seemore__btn::after {
+  content: "\f078";
+  display: inline-block;
+  margin-left: 4px;
+  width: 20px;
+  height: 20px;
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+}
+
+.accordion-2 {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.accordion-2 .acc-3 {
+  position: relative;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 18.5px 27px 18.5px 0;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+  background-color: #fff;
+  border-top: 1px solid #cfcfcf;
+  border-bottom: 1px solid #cfcfcf;
+}
+.accordion-2 .acc-3::before {
+  content: "+";
+  position: absolute;
+  display: inline-block;
+  top: 19px;
+  right: -4px;
+  width: 20px;
+  height: 20px;
+  align-content: center;
+  font-family: "Font Awesome 5 Free";
+  font-size: 15px;
+  font-weight: 900;
+}
+.accordion-2 .acc-4 {
+  position: relative;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 19px 27px 19px 0;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+  background-color: #fff;
+  border-bottom: 1px solid #cfcfcf;
+}
+.accordion-2 .acc-4::before {
+  content: "+";
+  position: absolute;
+  display: inline-block;
+  top: 19px;
+  right: -4px;
+  width: 20px;
+  height: 20px;
+  align-content: center;
+  font-family: "Font Awesome 5 Free";
+  font-size: 15px;
+  font-weight: 900;
+}
+.accordion-2 .acc-5 {
+  position: relative;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 19px 27px 19px 0;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+  background-color: #fff;
+  border-bottom: 1px solid #cfcfcf;
+}
+.accordion-2 .acc-5::before {
+  content: "+";
+  position: absolute;
+  display: inline-block;
+  top: 19px;
+  right: -4px;
+  width: 20px;
+  height: 20px;
+  align-content: center;
+  font-family: "Font Awesome 5 Free";
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.recommend_prd_lst-1 {
+  display: block;
+  padding-left: 20px;
+}
+.recommend_prd_lst-1 .rpl-tit {
+  font-family: "Noto Serif KR", serif;
+  font-size: 15px;
+  font-weight: 700;
+  padding-bottom: 8px;
+}
+.recommend_prd_lst-1 .rpl-slides {
+  display: flex;
+  width: 136px;
+}
+.recommend_prd_lst-1 .rpl-slides .rpl-swiper {
+  padding-right: 16px;
+}
+.recommend_prd_lst-1 .info_area {
+  width: 136px;
+}
+.recommend_prd_lst-1 .info_area .info_area_brand__name {
+  font-size: 13px;
+  font-weight: 500;
+}
+.recommend_prd_lst-1 .info_area .info_area_product_name {
+  white-space: nowrap;
+  font-size: 12px;
   font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.recommend_prd_lst-1 .info_area .info_area_price {
+  font-size: 12px;
+  font-weight: 500;
 }/*# sourceMappingURL=comm.css.map */
