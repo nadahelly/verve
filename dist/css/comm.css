@@ -831,17 +831,14 @@ html, body {
 }
 
 .sale-section1 {
-  display: flex;
-  flex-direction: column;
   margin-top: 11px;
-  border-top: 1px solid #cfcfcf;
 }
 .sale-section1 li {
   margin-top: -5px;
+  border-bottom: 1px solid #cfcfcf;
 }
 .sale-section1 li:nth-child(3) {
-  margin-top: -5px;
-  border-bottom: 1px solid #cfcfcf;
+  margin-top: -9px;
 }
 .sale-section1 li a {
   display: flex;
@@ -859,6 +856,11 @@ html, body {
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.4px;
+}
+
+.sale-img {
+  display: flex;
+  margin-top: 5px;
 }
 
 .sale-txt-p {
@@ -879,8 +881,4 @@ html, body {
   font-size: 14px;
   font-weight: bold;
   color: #000000;
-}
-
-.sale-section1:nth-child(2) {
-  margin-top: 20px;
 }/*# sourceMappingURL=comm.css.map */
