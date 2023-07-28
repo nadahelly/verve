@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>서브타이틀 | 프로젝트 이름</title>
+    <meta
+      name="description"
+      content="네이버 메인에서 다양한 정보와 유용한 컨텐츠를 만나 보세요"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="페이지 제목" />
+    <meta property="og:description" content="페이지 설명" />
+    <meta
+      property="og:image"
+      content="http://www.mysite.com/article/article1_featured_image.jpg"
+    />
+    <meta
+      property="og:url"
+      content="http://www.mysite.com/article/article1.html"
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="페이지 제목" />
+    <meta name="twitter:description" content="페이지 설명" />
+    <meta
+      name="twitter:image"
+      content="http://www.mysite.com/article/article1.html"
+    />
+    <meta name="twitter:domain" content="사이트 명" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./dist/css/comm.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./dist/js/include.js"></script>
+    <script defer src="./dist/js/comm.js"></script>
+  </head>
+  <body>
+    <div id="u-skip">
+      <a href="#gnb"><span>주요메뉴 바로가기</span></a>
+      <a href="#main"><span>컨텐츠 바로가기</span></a>
+      <a href="#footer"><span>풋터 바로가기</span></a>
+    </div>
+    <div class="wrap">
+      <header id="header" class="container">
+        <div class="inner">
+          <h1 id="logo">
+            <a href="#">Verve</a>
+          </h1>
+          <div class="util">
+            <ul class="lst-util">
+              <li>
+                <!-- a : 링크 연결 / button : 동작처리 -->
+                <button class="btn-g btn-search">
+                  <span class="blind">검색</span>
+                </button>
+              </li>
+              <li>
+                <button class="btn-g btn-bag">
+                  <span class="material-icons-outlined">shopping_bag</span>
+                  <span class="blind">장바구니</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <nav class="gnb">
+        <ul class="depth1">
+          <li>
+            <a href="#">NEW</a>
+          </li>
+          <li>
+            <a href="#">BEST</a>
+          </li>
+          <li>
+            <a href="#">WOMEN</a>
+          </li>
+          <li>
+            <a href="#">MEN</a>
+          </li>
+          <li>
+            <a href="#">SHOES</a>
+          </li>
+          <li>
+            <a href="#">ACC</a>
+          </li>
+          <li>
+            <a href="#">EVENT</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="slide-wrap slide-name">
+        <img
+          src="https://images.unsplash.com/photo-1603400521630-9f2de124b33b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+          alt="슬라이드 옷사진"
+        />
+      </div>
+      <main id="main" class="container">
+        <h2 class="container-txt">WOMEN</h2>
+        <div class="gnb-women">
+          <ul class="depth2">
+            <li>
+              <a href="#">ALL</a>
+            </li>
+            <li>
+              <a href="#">OUTER</a>
+            </li>
+            <li>
+              <a href="#">TOP</a>
+            </li>
+            <li>
+              <a href="#">ONE-PIECE</a>
+            </li>
+            <li>
+              <a href="#">BOTTOM</a>
+            </li>
+          </ul>
+        </div>
+        <section class="sec-new">
+          <h3>이번주 신상품</h3>
+          <div class="swiper slide-g slide-new">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="swiper-slide-img">
+                    <img
+                      src="./images/상품리스트/1-1.jpg"
+                      alt="[뉴시즌] 블랙 트위 코튼혼방 원피스"
+                    />
+                  </div>
+                  <div class="swiper-slide-txt">
+                    <p class="txt-new__tit">NEW YORK WOMEN</p>
+                    <p class="txt-new__desk">
+                      [뉴시즌] 블랙 트위 코튼혼방 원피스
+                    </p>
+                    <p class="txt-new__num">
+                      <span>599,000원</span>
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="swiper-slide-img">
+                    <img
+                      src="./images/상품리스트/1-2.jpg"
+                      alt="트윙클 트윙클 트윈스타 셔츠 블루"
+                    />
+                  </div>
+                  <div class="swiper-slide-txt">
+                    <p class="txt-new__tit">LOTSYOU</p>
+                    <p class="txt-new__desk">
+                      트윙클 트윙클 트윈스타 셔츠 블루
+                    </p>
+                    <p class="txt-new__num">
+                      <span>149,000원</span>
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="swiper-slide-img">
+                    <img
+                      src="./images/상품리스트/1-3.jpg"
+                      alt="[2023 SUMMER] 23HS_크로쉐 니트 가디건_WHITE"
+                    />
+                  </div>
+                  <div class="swiper-slide-txt">
+                    <p class="txt-new__tit">A;td</p>
+                    <p class="txt-new__desk">
+                      [2023 SUMMER] 23HS_크로쉐 니트 가디건_WHITE
+                    </p>
+                    <p class="txt-new__num txt-new__atd">
+                      <span>104,490원</span>
+                      <strong>19%</strong>
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="swiper-slide-img">
+                    <img
+                      src="./images/상품리스트/1-4.jpg"
+                      alt="[차정원 착용] 체크 썸머 트위드 크롭자켓_NAVY"
+                    />
+                  </div>
+                  <div class="swiper-slide-txt">
+                    <p class="txt-new__tit">앳코너</p>
+                    <p class="txt-new__desk">
+                      [차정원 착용] 체크 썸머 트위드 크롭자켓_NAVY
+                    </p>
+                    <p class="txt-new__num">
+                      <span>179,000원</span>
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="swiper-slide-img">
+                    <img
+                      src="./images/상품리스트/1-5.jpg"
+                      alt="브이넥 레이스 퍼프 블라우스_WHITE"
+                    />
+                  </div>
+                  <div class="swiper-slide-txt">
+                    <p class="txt-new__tit">OH L</p>
+                    <p class="txt-new__desk">
+                      브이넥 레이스 퍼프 블라우스_WHITE
+                    </p>
+                    <p class="txt-new__num txt-hot__ohl">
+                      <span>125,800원</span>
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide swiper-slide__icon">
+                <button class="btn-more">상품 더보기</button>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </section>
+        <section class="sec-hot">
+          <h3>MZ세대 HOT아이템</h3>
+          <div class="swiper slide-g slide-hot">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="swiper-slide-img">
+                    <img src="./images/상품리스트/2-1.jpg" alt="ANOETIC" />
+                  </div>
+                  <div class="swiper-slide-txt">
+                    <p class="txt-hot__tit">ANOETIC</p>
+                    <p class="txt-hot__desk">ANC 라인 하프 니트 3color</p>
+                    <p class="txt-hot__num">
+                      <span>68,000원</span>
+                      <strong>20%</strong>
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="swiper-slide-img">
+                    <img src="./images/상품리스트/2-2.jpg" alt="SAYSRA" />
+                  </div>
+                  <div class="swiper-slide-txt">
+                    <p class="txt-hot__tit">SAYSRA</p>
+                    <p class="txt-hot__desk">클래식 롱 스커트 블랙</p>
+                    <p class="txt-hot__num">
+                      <span>92,800원</span>
+                      <strong>20%</strong>
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="swiper-slide-img">
+                    <img src="./images/상품리스트/2-3.jpg" alt="OH L" />
+                  </div>
+                  <div class="swiper-slide-txt">
+                    <p class="txt-hot__tit">OH L</p>
+                    <p class="txt-hot__desk">쇼츠 슬립 가디건_BLACK</p>
+                    <p class="txt-hot__num">
+                      <span>108,800원</span>
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="swiper-slide-img">
+                    <img
+                      src="./images/상품리스트/2-4.jpg"
+                      alt="GIMME THE YOUNG"
+                    />
+                  </div>
+                  <div class="swiper-slide-txt">
+                    <p class="txt-hot__tit">GIMME THE YOUNG</p>
+                    <p class="txt-hot__desk">G셔링 티셔츠 HS 브라운</p>
+                    <p class="txt-hot__num">
+                      <span>69,600원</span>
+                      <strong>20%</strong>
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="swiper-slide-img">
+                    <img src="./images/상품리스트/2-5.jpg" alt="OH L" />
+                  </div>
+                  <div class="swiper-slide-txt">
+                    <p class="txt-hot__tit">OH L</p>
+                    <p class="txt-hot__desk">
+                      레이스 슬립 미니 드레스 아이보리
+                    </p>
+                    <p class="txt-hot__num txt-hot__ohl">
+                      <span>185,300원</span>
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide swiper-slide__icon">
+                <button class="btn-more">상품 더보기</button>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </section>
+        <section class="sec-trend">
+          <h2 class="container-txt">TREND</h2>
+          <div class="lst-trend">
+            <ul class="lst-trend-thumb">
+              <li>
+                <a href="#">
+                  <div>
+                    <img
+                      src="./images/상품리스트/하프팬츠.jpg"
+                      alt="하프팬츠"
+                    />
+                    <p class="trend-txt">#하프팬츠</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div>
+                    <img
+                      src="./images/상품리스트/서머니트.jpg"
+                      alt="서머니트"
+                    />
+                    <p class="trend-txt">#서머니트</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div>
+                    <img
+                      src="./images/상품리스트/스트라이프.jpg"
+                      alt="스트라이프"
+                    />
+                    <p class="trend-txt">#스트라이프</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div>
+                    <img src="./images/상품리스트/데님.jpg" alt="데님" />
+                    <p class="trend-txt">#데님</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="sec-season">
+          <h2 class="container-txt">SEASON</h2>
+          <div class="season-summer">
+            <a href="#">
+              <div class="season-img">
+                <img src="./images/상품리스트/season.jpg" alt="season" />
+              </div>
+              <div class="season-txt">
+                <p>2023 Hot Summer Collection</p>
+              </div>
+            </a>
+          </div>
+        </section>
+        <section class="sec-sale">
+          <h2>SALE</h2>
+          <div class="swiper-wrapper lst-sale">
+            <div class="swiper-slide lst-sale-section1">
+              <ul class="sale-section1">
+                <li>
+                  <a href="#">
+                    <div class="sale-img">
+                      <img
+                        src="./images/상품리스트/sale1.jpg"
+                        alt="VANESSABRUNO"
+                      />
+                    </div>
+                    <div class="sale-txt">
+                      <p>VANESSABRUNO</p>
+                      <p class="sale-p2">
+                        [23FW] 블루 포켓배색 5부소매 블라우스
+                      </p>
+                      <p class="sale-txt-p">
+                        <strong>5%</strong>
+                        <span>398,000원</span>
+                        <span class="sale-span2">378,100원</span>
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="sale-img">
+                      <img src="./images/상품리스트/sale2.jpg" alt="DAKS MEN" />
+                    </div>
+                    <div class="sale-txt">
+                      <p>DAKS MEN</p>
+                      <p class="sale-p2">
+                        [23SS] 닥스훈트 그레이로고와펜 카라티
+                      </p>
+                      <p class="sale-txt-p">
+                        <strong>33%</strong>
+                        <span>308,000원</span>
+                        <span class="sale-span2">205,410원</span>
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="sale-img">
+                      <img
+                        src="./images/상품리스트/sale3.jpg"
+                        alt="HAZZYS LADIES"
+                      />
+                    </div>
+                    <div class="sale-txt">
+                      <p>HAZZYS LADIES</p>
+                      <p class="sale-p2">[23FW] 블랙 단색 린넨혼방 반팔자켓</p>
+                      <p class="sale-txt-p">
+                        <strong>24%</strong>
+                        <span>359,000원</span>
+                        <span class="sale-span2">272,840원</span>
+                      </p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-slide lst-sale-section2">
+              <ul class="sale-section2">
+                <li>
+                  <a href="#">
+                    <div class="sale-img">
+                      <img src="" alt="" />
+                    </div>
+                    <div class="sale-txt">
+                      <p></p>
+                      <p></p>
+                      <p class="sale-txt-p">
+                        <strong></strong>
+                        <span></span>
+                        <span></span>
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="sale-img">
+                      <img src="" alt="" />
+                    </div>
+                    <div class="sale-txt">
+                      <p></p>
+                      <p></p>
+                      <p class="sale-txt-p">
+                        <strong></strong>
+                        <span></span>
+                        <span></span>
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="sale-img">
+                      <img src="" alt="" />
+                    </div>
+                    <div class="sale-txt">
+                      <p></p>
+                      <p></p>
+                      <p class="sale-txt-p">
+                        <strong></strong>
+                        <span></span>
+                        <span></span>
+                      </p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer id="footer" class="container">풋터</footer>
+    </div>
+  </body>
+</html>

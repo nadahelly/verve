@@ -59,6 +59,21 @@
   font-weight: 900;
   src: url(../fonts/NotoSerifKR-Black.woff) format("woof");
 }
+@font-face {
+  font-family: "GothicA1";
+  font-weight: 200;
+  src: url(../fonts/GothicA1-ExtraLight.woff) format("woff");
+}
+@font-face {
+  font-family: "GothicA1";
+  font-weight: 400;
+  src: url(../fonts/GothicA1-Regular.woff) format("woff");
+}
+@font-face {
+  font-family: "GothicA1";
+  font-weight: 500;
+  src: url(../fonts/GothicA1-Medium.woff) format("woff");
+}
 /* reset */
 body,
 div,
@@ -315,12 +330,581 @@ legend {
   content: "";
 }
 
-.main {
-  height: 100px;
+.container {
+  margin: 0 20px;
 }
 
-.contents {
-  height: 300px;
+#header .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+#header .inner #logo {
+  padding-bottom: 5px;
+  font-family: "Noto Serif KR", serif;
+  font-weight: 900;
+  font-size: 36px;
+}
+#header .lst-util {
+  display: flex;
+}
+#header .lst-util .btn-g {
+  padding: 15px 0 0 10px;
+  width: 31px;
+  height: 64px;
+}
+#header .lst-util .btn-g::before {
+  font-size: 23px;
+  font-family: "Font Awesome 6 Free";
+}
+#header .lst-util .btn-search::before {
+  content: "\f002";
+  font-weight: 900;
+}
+
+.gnb {
+  margin: 0 20px;
+}
+.gnb .depth1 {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 9.5px;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.gnb li {
+  padding-right: 33.5px;
+  padding-top: 11px;
+}
+
+#main {
+  bottom: 10px;
+}
+#main .container-txt {
+  padding: 9.3px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: "Noto Serif KR", serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+#main .depth2 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Noto Sans KR", sans-serif;
+}
+#main .depth2 a {
+  color: #cfcfcf;
+}
+#main .depth2 a:hover {
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+
+.main-slide {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+.main-slide .splash {
+  position: relative;
+  z-index: 0;
+  width: 375px;
+  height: 667px;
+  background-image: url(/images/main/main1.jpg);
+}
+.main-slide .splash .verve-box {
+  position: absolute;
+  z-index: 2;
+  top: 388px;
+  left: 18px;
+  width: 400px;
+  height: 100px;
+  background-color: white;
+  animation-name: ani-verve;
+  animation-duration: 6s;
+  animation-fill-mode: both;
+}
+.main-slide .splash .verve-box2 {
+  position: absolute;
+  z-index: 2;
+  top: 500px;
+  left: 18px;
+  width: 400px;
+  height: 100px;
+  background-color: white;
+  animation-name: ani-verve2;
+  animation-duration: 6s;
+  animation-fill-mode: both;
+}
+
+.main-slide .splash-bg {
+  position: absolute;
+  z-index: 1;
+  left: 363px;
+  width: 20px;
+  height: 667px;
+  background-color: #000;
+}
+.main-slide .splash-bg2 {
+  position: absolute;
+  z-index: 1;
+  width: 20px;
+  height: 667px;
+  background-color: #000;
+}
+
+@keyframes ani-verve {
+  0% {
+    left: -1000px;
+  }
+  20% {
+    left: -500px;
+  }
+  80% {
+    left: 1000px;
+  }
+  100% {
+    left: 2000px;
+  }
+}
+@keyframes ani-verve2 {
+  0% {
+    left: -1000px;
+  }
+  20% {
+    left: -500px;
+  }
+  80% {
+    left: 1000px;
+  }
+  100% {
+    left: 2000px;
+  }
+}
+.ocean {
+  overflow: hidden;
+}
+.ocean .wave {
+  background: url(../../images/main/main1.jpg) repeat-x;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6400px;
+  height: 198px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes wave {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -1600px;
+  }
+}
+.container {
+  margin: 0 20px;
+}
+
+#header .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+#header .inner #logo {
+  padding-bottom: 5px;
+  font-family: "Noto Serif KR", serif;
+  font-weight: 900;
+  font-size: 36px;
+}
+#header .lst-util {
+  display: flex;
+}
+#header .lst-util .btn-g {
+  padding: 15px 0 0 10px;
+  width: 31px;
+  height: 64px;
+}
+#header .lst-util .btn-g::before {
+  font-size: 23px;
+  font-family: "Font Awesome 6 Free";
+}
+#header .lst-util .btn-search::before {
+  content: "\f002";
+  font-weight: 900;
+}
+
+.gnb {
+  margin: 0 20px;
+}
+.gnb .depth1 {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 9.5px;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.gnb li {
+  padding-right: 33.5px;
+  padding-top: 11px;
+}
+
+.slide-wrap {
+  display: block;
+}
+.slide-wrap img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 77%;
+     object-position: 50% 77%;
+  width: 375px;
+  height: 250px;
+}
+
+#main {
+  bottom: 10px;
+}
+#main .container-txt {
+  padding: 9.3px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: "Noto Serif KR", serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+#main .depth2 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Noto Sans KR", sans-serif;
+}
+#main .depth2 a {
+  color: #cfcfcf;
+}
+#main .depth2 a:hover {
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+
+.sec-new {
+  margin-top: 29px;
+}
+.sec-new h3 {
+  letter-spacing: 0.8px;
+  margin-top: 19px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Gothic A1", sans-serif;
+}
+.sec-new .swiper {
+  margin-top: 7px;
+  width: 150%;
+  height: 100%;
+}
+.sec-new .swiper .swiper-slide {
+  margin-right: 15px;
+  width: 160px;
+  height: 259px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.sec-new .swiper .swiper-slide .swiper-slide img {
+  display: block;
+  width: 160px;
+  height: 160px;
+}
+
+.swiper-slide-txt {
+  margin-top: 11px;
+}
+.swiper-slide-txt .txt-new__tit {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.swiper-slide-txt .txt-new__desk {
+  display: block;
+  margin-top: -2px;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.swiper-slide-txt .txt-new__num {
+  display: block;
+  margin-top: 3px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.swiper-slide-txt .txt-new__num strong {
+  margin-left: 20px;
+  color: #DD0035;
+}
+
+.swiper-pagination {
+  display: none;
+}
+
+.swiper-slide__icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide__icon button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 160px;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Gothic A1", sans-serif;
+}
+.swiper-slide__icon button::before {
+  font-size: 20px;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f138";
+  margin-bottom: 4px;
+}
+
+.sec-hot {
+  margin-top: 41px;
+}
+.sec-hot h3 {
+  letter-spacing: 0.8px;
+  margin-top: 19px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Gothic A1", sans-serif;
+}
+.sec-hot .swiper {
+  margin-top: 7px;
+  width: 150%;
+  height: 100%;
+}
+.sec-hot .swiper .swiper-slide {
+  margin-right: 15px;
+  width: 160px;
+  height: 259px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.sec-hot .swiper .swiper-slide .swiper-slide img {
+  display: block;
+  width: 160px;
+  height: 160px;
+}
+
+.swiper-slide-txt {
+  margin-top: 11px;
+}
+.swiper-slide-txt .txt-hot__tit {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.swiper-slide-txt .txt-hot__desk {
+  display: block;
+  margin-top: -2px;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.swiper-slide-txt .txt-hot__num {
+  display: block;
+  margin-top: 22px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.swiper-slide-txt .txt-hot__num span {
+  margin-right: 40px;
+}
+.swiper-slide-txt .txt-hot__num strong {
+  color: #DD0035;
+}
+.swiper-slide-txt .txt-hot__ohl {
+  margin-top: 4px;
+}
+
+.swiper-pagination {
+  display: none;
+}
+
+.swiper-slide__icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 160px;
+}
+.swiper-slide__icon button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 160px;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Gothic A1", sans-serif;
+}
+.swiper-slide__icon button::before {
+  font-size: 20px;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f138";
+}
+
+.sec-trend h2 {
+  margin-top: 57px;
+}
+
+.lst-trend-thumb {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.lst-trend-thumb li {
+  position: relative;
+  width: calc(50% - 7.5px);
+  height: 200px;
+  margin-bottom: 15px;
+}
+.lst-trend-thumb li div::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 160px;
+  height: 200px;
+  background: rgba(0, 0, 0, 0.3);
+}
+.lst-trend-thumb li .trend-txt {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 15px;
+  color: #fff;
+}
+
+.sec-season h2 {
+  margin-top: 29px;
+}
+.sec-season .season-summer {
+  position: relative;
+}
+.sec-season .season-summer .season-img::after {
+  position: absolute;
+  content: "";
+  top: 330px;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  background: rgba(0, 0, 0, 0.3);
+}
+.sec-season .season-summer .season-img img {
+  margin-top: -3px;
+}
+.sec-season .season-summer .season-txt {
+  position: absolute;
+  top: 340px;
+  left: 16px;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: "Pretendard-Regular";
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.sec-sale {
+  margin-top: 48px;
+}
+.sec-sale h2 {
+  text-align: left;
+  letter-spacing: 1px;
+  font-family: "Noto Serif KR", serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.sale-section1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 11px;
+  border-top: 1px solid #cfcfcf;
+}
+.sale-section1 li {
+  margin-top: -5px;
+}
+.sale-section1 li:nth-child(3) {
+  margin-top: -5px;
+  border-bottom: 1px solid #cfcfcf;
+}
+.sale-section1 li a {
+  display: flex;
+}
+.sale-section1 li a .sale-txt {
+  padding-left: 15px;
+  padding-top: 20px;
+  font-family: "Gothic A1", sans-serif;
+}
+.sale-section1 li a .sale-txt p {
+  font-size: 12px;
+  font-weight: bold;
+}
+.sale-section1 li a .sale-txt .sale-p2 {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+}
+
+.sale-txt-p {
+  padding-top: 6px;
+}
+.sale-txt-p strong {
+  font-size: 14px;
+  font-weight: bold;
+  color: #DD0035;
+}
+.sale-txt-p span {
+  padding-left: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #cfcfcf;
+}
+.sale-txt-p .sale-span2 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.sale-section1:nth-child(2) {
+  margin-top: 20px;
 }
 
 @font-face {
@@ -383,6 +967,21 @@ legend {
   font-weight: 900;
   src: url(../fonts/NotoSerifKR-Black.woff) format("woof");
 }
+@font-face {
+  font-family: "GothicA1";
+  font-weight: 200;
+  src: url(../fonts/GothicA1-ExtraLight.woff) format("woff");
+}
+@font-face {
+  font-family: "GothicA1";
+  font-weight: 400;
+  src: url(../fonts/GothicA1-Regular.woff) format("woff");
+}
+@font-face {
+  font-family: "GothicA1";
+  font-weight: 500;
+  src: url(../fonts/GothicA1-Medium.woff) format("woff");
+}
 /* reset */
 body,
 div,
@@ -639,14 +1238,28 @@ legend {
   content: "";
 }
 
-.main {
-  height: 100px;
+.ocean {
+  overflow: hidden;
+}
+.ocean .wave {
+  background: url(../../images/main/main1.jpg) repeat-x;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6400px;
+  height: 198px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
 }
 
-.contents {
-  height: 300px;
+@keyframes wave {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -1600px;
+  }
 }
-
 .wrap {
   position: relative;
 }
@@ -783,7 +1396,7 @@ legend {
 .prd-price-discount .prd-price-discount__percent {
   font-size: 18px;
   font-weight: bold;
-  color: #DD0035;
+  color: #dd0035;
 }
 .prd-price-discount .prd-price-discount__price {
   font-size: 18px;
@@ -827,7 +1440,7 @@ legend {
 .acc-1-discount .acc-1-discount__percent {
   font-size: 14px;
   font-weight: bold;
-  color: #DD0035;
+  color: #dd0035;
   margin-right: 4px;
 }
 .acc-1-discount .acc-1-discount__price {

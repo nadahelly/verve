@@ -1,7 +1,168 @@
 @charset "UFT-8";
-@import "variables", "mixin", "fonts", "reset", "main", "contents";
+@import "variables", "mixin", "fonts", "reset";
 
 // comm.scss -
 // 공통요소 : 헤더, 풋터, 버튼, 아이콘, 박스
 
-@import "./goods-detail";
+// 공통
+.container {
+  margin: 0 20px;
+}
+
+// header
+#header {
+  .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    #logo {
+      padding-bottom: 5px;
+      font-family: "Noto Serif KR", serif;
+      font-weight: 900;
+      font-size: 36px;
+    }
+  }
+  .lst-util {
+    display: flex;
+    .btn-g {
+      padding: 15px 0 0 10px;
+      width: 31px;
+      height: 64px;
+      &::before {
+        font-size: 23px;
+        font-family: "Font Awesome 6 Free";
+      }
+    }
+    .btn-search::before {
+      content: "\f002";
+      font-weight: 900;
+    }
+  }
+}
+.gnb {
+  margin: 0 20px;
+  .depth1 {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 9.5px;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "Noto Sans KR", sans-serif;
+  }
+  li {
+    padding-right: 33.5px;
+    padding-top: 11px;
+  }
+}
+
+#main {
+  bottom: 10px;
+  .container-txt {
+    padding: 9.3px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: "Noto Serif KR", serif;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .depth2 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: "Noto Sans KR", sans-serif;
+    a {
+      color: #cfcfcf;
+      &:hover {
+        color: #000;
+        border-bottom: 1px solid #000;
+      }
+    }
+  }
+}
+
+// main slide
+.main-slide {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  .splash {
+    position: relative;
+    z-index: 0;
+    width: 375px;
+    height: 667px;
+    background-image: url(/images/main/main1.jpg);
+    .verve-box {
+      position: absolute;
+      z-index: 2;
+      top: 388px;
+      left: 18px;
+      width: 400px;
+      height: 100px;
+      background-color: white;
+      animation-name: ani-verve;
+      animation-duration: 6s;
+      animation-fill-mode: both;
+    }
+    .verve-box2 {
+      position: absolute;
+      z-index: 2;
+      top: 500px;
+      left: 18px;
+      width: 400px;
+      height: 100px;
+      background-color: white;
+      animation-name: ani-verve2;
+      animation-duration: 6s;
+      animation-fill-mode: both;
+    }
+  }
+}
+.main-slide {
+  .splash-bg {
+    position: absolute;
+    z-index: 1;
+    left: 363px;
+    width: 20px;
+    height: 667px;
+    background-color: #000;
+  }
+  .splash-bg2 {
+    position: absolute;
+    z-index: 1;
+    width: 20px;
+    height: 667px;
+    background-color: #000;
+  }
+}
+@keyframes ani-verve {
+  0% {
+    left: -1000px;
+  }
+  20% {
+    left: -500px;
+  }
+  80% {
+    left: 1000px;
+  }
+  100% {
+    left: 2000px;
+  }
+}
+@keyframes ani-verve2 {
+  0% {
+    left: -1000px;
+  }
+  20% {
+    left: -500px;
+  }
+  80% {
+    left: 1000px;
+  }
+  100% {
+    left: 2000px;
+  }
+}
+
+@import "main", "contents", "goods_list", "goods_detail";
