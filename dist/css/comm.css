@@ -830,29 +830,29 @@ html, body {
   font-size: 20px;
 }
 
-.sale-section1 {
-  margin-top: 11px;
+.sec-sale-g {
+  margin-top: 8px;
 }
-.sale-section1 li {
+.sec-sale-g li {
   margin-top: -5px;
   border-bottom: 1px solid #cfcfcf;
 }
-.sale-section1 li:nth-child(3) {
-  margin-top: -9px;
+.sec-sale-g li:nth-child(1) {
+  border-top: 1px solid #cfcfcf;
 }
-.sale-section1 li a {
+.sec-sale-g li a {
   display: flex;
 }
-.sale-section1 li a .sale-txt {
+.sec-sale-g li a .sale-txt {
   padding-left: 15px;
-  padding-top: 20px;
+  padding-top: 23px;
   font-family: "Gothic A1", sans-serif;
 }
-.sale-section1 li a .sale-txt p {
+.sec-sale-g li a .sale-txt p {
   font-size: 12px;
-  font-weight: bold;
+  font-weight: 700;
 }
-.sale-section1 li a .sale-txt .sale-p2 {
+.sec-sale-g li a .sale-txt .sale-p2 {
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.4px;
@@ -864,7 +864,7 @@ html, body {
 }
 
 .sale-txt-p {
-  padding-top: 6px;
+  padding-top: 5px;
 }
 .sale-txt-p strong {
   font-size: 14px;
@@ -881,4 +881,24 @@ html, body {
   font-size: 14px;
   font-weight: bold;
   color: #000000;
+}
+
+.sec-bnr {
+  margin-top: 44px;
+}
+
+.sec-ranking {
+  margin-top: 36px;
+}
+.sec-ranking ul {
+  position: relative;
+}
+.sec-ranking ul li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: #000;
 }/*# sourceMappingURL=comm.css.map */
