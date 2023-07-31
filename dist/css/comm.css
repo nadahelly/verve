@@ -513,6 +513,7 @@ body {
   padding: 15px 0 0 10px;
   width: 31px;
   height: 64px;
+  color: #000;
 }
 #header .lst-util .btn-g::before {
   font-size: 23px;
@@ -891,13 +892,25 @@ body {
   margin-top: -41px;
 }
 
-.sec-ranking {
+.sec-rank {
   margin-top: 37px;
 }
-.sec-ranking ul {
+.sec-rank .lst-rank {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.sec-rank .lst-rank li {
+  margin-bottom: 10px;
+}
+.sec-rank .lst-rank li a {
+  display: block;
+}
+
+.lst-rank li:nth-child(1) {
   position: relative;
 }
-.sec-ranking ul li::after {
+.lst-rank li:nth-child(1)::after {
   content: "1";
   position: absolute;
   top: 5px;
@@ -911,6 +924,198 @@ body {
   font-weight: bold;
   font-size: 15px;
   color: #fff;
+}
+
+.lst-rank li:nth-child(2) {
+  position: relative;
+}
+.lst-rank li:nth-child(2)::after {
+  content: "2";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 25px;
+  height: 25px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 20%;
+  text-align: center;
+  font-family: "Noto Sans KR", serif;
+  font-weight: bold;
+  font-size: 15px;
+  color: #fff;
+}
+
+.lst-rank li:nth-child(3) {
+  position: relative;
+}
+.lst-rank li:nth-child(3)::after {
+  content: "3";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 25px;
+  height: 25px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 20%;
+  text-align: center;
+  font-family: "Noto Sans KR", serif;
+  font-weight: bold;
+  font-size: 15px;
+  color: #fff;
+}
+
+.lst-rank li:nth-child(4) {
+  position: relative;
+}
+.lst-rank li:nth-child(4)::after {
+  content: "4";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 25px;
+  height: 25px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 20%;
+  text-align: center;
+  font-family: "Noto Sans KR", serif;
+  font-weight: bold;
+  font-size: 15px;
+  color: #fff;
+}
+
+.lst-rank li:nth-child(5) {
+  position: relative;
+}
+.lst-rank li:nth-child(5)::after {
+  content: "5";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 25px;
+  height: 25px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 20%;
+  text-align: center;
+  font-family: "Noto Sans KR", serif;
+  font-weight: bold;
+  font-size: 15px;
+  color: #fff;
+}
+
+.lst-rank li:nth-child(6) {
+  position: relative;
+}
+.lst-rank li:nth-child(6)::after {
+  content: "6";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 25px;
+  height: 25px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 20%;
+  text-align: center;
+  font-family: "Noto Sans KR", serif;
+  font-weight: bold;
+  font-size: 15px;
+  color: #fff;
+}
+
+.lst-rank li:nth-child(7) {
+  position: relative;
+}
+.lst-rank li:nth-child(7)::after {
+  content: "7";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 25px;
+  height: 25px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 20%;
+  text-align: center;
+  font-family: "Noto Sans KR", serif;
+  font-weight: bold;
+  font-size: 15px;
+  color: #fff;
+}
+
+.lst-rank li:nth-child(8) {
+  position: relative;
+}
+.lst-rank li:nth-child(8)::after {
+  content: "8";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 25px;
+  height: 25px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 20%;
+  text-align: center;
+  font-family: "Noto Sans KR", serif;
+  font-weight: bold;
+  font-size: 15px;
+  color: #fff;
+}
+
+.lst-rank li:nth-child(9) {
+  position: relative;
+}
+.lst-rank li:nth-child(9)::after {
+  content: "9";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 25px;
+  height: 25px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 20%;
+  text-align: center;
+  font-family: "Noto Sans KR", serif;
+  font-weight: bold;
+  font-size: 15px;
+  color: #fff;
+}
+
+.lst-rank li:nth-child(10) {
+  position: relative;
+}
+.lst-rank li:nth-child(10)::after {
+  content: "10";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 25px;
+  height: 25px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 20%;
+  text-align: center;
+  font-family: "Noto Sans KR", serif;
+  font-weight: bold;
+  font-size: 15px;
+  color: #fff;
+}
+
+.btn-rank-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 335px;
+  height: 40px;
+  background: rgba(217, 217, 217, 0.3);
+}
+.btn-rank-more button {
+  padding: 10px 100px;
+  font-weight: bold;
+  font-family: "Gothic A1", sans-serif;
+  font-size: 16px;
+}
+.btn-rank-more button::after {
+  content: "\f107";
+  font-family: "Line Awesome Free";
+  font-weight: 900;
 }
 
 @font-face {
