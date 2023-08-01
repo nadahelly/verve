@@ -31,17 +31,23 @@
   }
 }
 .gnb {
-  margin: 0 20px;
+  overflow-x: scroll;
+  flex-wrap: nowrap;
+  width: 375px;
+  &::-webkit-scrollbar{
+    display:none;
+  }
   .depth1 {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 9.5px;
+  padding-left: 20px;
+  padding-bottom: 10px;
   font-size: 15px;
   font-weight: 400;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;  
   }
   li {
-    padding-right: 33.5px;
+    padding-right: 33px;
     padding-top: 11px;
   }
 }
@@ -58,7 +64,7 @@
 
 #main {
   bottom: 10px;
-  .container-txt {
+  .container-tit {
     padding: 9.3px;
     text-align: center;
     letter-spacing: 1px;
@@ -273,7 +279,7 @@
     width: calc(50% - 7.5px);
     height: 200px;
     margin-bottom: 15px;
-    div {
+    a {
       &::after {
       position: absolute;
       content: "";
@@ -644,3 +650,8 @@
     }
   }
 }
+
+// #btn-more { display: none; }
+// #btn-more:checked ~ .lst-rank2 { display: block; } 
+// .lst-rank2 { display: none; }
+

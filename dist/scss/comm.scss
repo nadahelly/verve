@@ -41,19 +41,25 @@
   }
 }
 .gnb {
-  margin: 0 20px;
+  overflow-x: scroll;
+  flex-wrap: nowrap;
+  width: 375px;
+  &::-webkit-scrollbar{
+    display:none;
+  }
   .depth1 {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 9.5px;
-    font-size: 15px;
-    font-weight: 400;
-    font-family: "Noto Sans KR", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  // padding-left: 20px;
+  // padding-bottom: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Noto Sans KR', sans-serif;  
   }
-  li {
-    padding-right: 33.5px;
-    padding-top: 11px;
-  }
+  // li {
+  //   padding-right: 33px;
+  //   padding-top: 11px;
+  // }
 }
 
 #main {

@@ -368,19 +368,19 @@ body {
 }
 
 .gnb {
-  margin: 0 20px;
+  overflow-x: scroll;
+  flex-wrap: nowrap;
+  width: 375px;
+}
+.gnb::-webkit-scrollbar {
+  display: none;
 }
 .gnb .depth1 {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 9.5px;
   font-size: 15px;
   font-weight: 400;
   font-family: "Noto Sans KR", sans-serif;
-}
-.gnb li {
-  padding-right: 33.5px;
-  padding-top: 11px;
 }
 
 #main {
@@ -525,18 +525,24 @@ body {
 }
 
 .gnb {
-  margin: 0 20px;
+  overflow-x: scroll;
+  flex-wrap: nowrap;
+  width: 375px;
+}
+.gnb::-webkit-scrollbar {
+  display: none;
 }
 .gnb .depth1 {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 9.5px;
+  padding-left: 20px;
+  padding-bottom: 10px;
   font-size: 15px;
   font-weight: 400;
   font-family: "Noto Sans KR", sans-serif;
 }
 .gnb li {
-  padding-right: 33.5px;
+  padding-right: 33px;
   padding-top: 11px;
 }
 
@@ -555,7 +561,7 @@ body {
 #main {
   bottom: 10px;
 }
-#main .container-txt {
+#main .container-tit {
   padding: 9.3px;
   text-align: center;
   letter-spacing: 1px;
@@ -771,7 +777,7 @@ body {
   height: 200px;
   margin-bottom: 15px;
 }
-.lst-trend-thumb li div::after {
+.lst-trend-thumb li a::after {
   position: absolute;
   content: "";
   top: 0;
