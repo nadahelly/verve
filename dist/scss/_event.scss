@@ -1,0 +1,69 @@
+
+// event slide
+.slide {
+  padding-top: 23px;
+  .slide-event {
+    display: flex;
+  }
+}
+
+// main
+#main {
+  .event-tit {
+    padding: 9px;
+    width: 335px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: 'Noto Serif KR', serif;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .event-tap {
+    .event-depth {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 30px;
+      font-size: 13px;
+      font-weight: 400;
+      font-family: 'Noto Sans KR', sans-serif;
+      a {
+        margin-right: 35px;
+        color: #cfcfcf;
+        &:hover {
+        color: #000;
+        border-bottom: 1px solid #000;
+        }
+      }
+    }
+  }
+}
+
+// event sec
+.event-lst-box {
+  padding-bottom: 35px;
+  .event-lst-txt {
+    padding-top: 5px;
+    p:nth-child(1) {
+      font-size: 14px;
+      font-weight: bold;
+      font-family: 'Noto Sans KR', sans-serif;
+    }
+    p:nth-child(2) {
+      line-height: 17px;
+      letter-spacing: -1px;
+      font-size: 13px;
+      font-weight: 400;
+      font-family: 'Noto Sans KR', sans-serif;
+      color: #767676;
+    }
+    p:nth-child(3) {
+      padding-top: 10px;
+      font-size: 12px;
+      font-weight: 400;
+      font-family: 'Noto Sans KR', sans-serif;
+      color: #999999;
+    }
+  }
+}
+
+// 종료된 이벤트

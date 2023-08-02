@@ -331,7 +331,7 @@ legend {
 }
 
 body {
-  background: url(../../images/상품리스트-WOMEN.png) 0 0 no-repeat;
+  background: url(../../images/이벤트리스트.png) 0 0 no-repeat;
 }
 
 .container {
@@ -542,7 +542,7 @@ body {
   font-family: "Noto Sans KR", sans-serif;
 }
 .gnb li {
-  padding-right: 33px;
+  padding-right: 20px;
   padding-top: 11px;
 }
 
@@ -1456,7 +1456,7 @@ legend {
 }
 
 body {
-  background: url(../../images/상품리스트-WOMEN.png) 0 0 no-repeat;
+  background: url(../../images/이벤트리스트.png) 0 0 no-repeat;
 }
 
 .main {
@@ -1919,4 +1919,64 @@ body {
 .recommend_prd_lst-1 .info_area .info_area_price {
   font-size: 12px;
   font-weight: 500;
+}
+
+.slide {
+  padding-top: 23px;
+}
+.slide .slide-event {
+  display: flex;
+}
+
+#main .event-tit {
+  padding: 9px;
+  width: 335px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: "Noto Serif KR", serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+#main .event-tap .event-depth {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Noto Sans KR", sans-serif;
+}
+#main .event-tap .event-depth a {
+  margin-right: 35px;
+  color: #cfcfcf;
+}
+#main .event-tap .event-depth a:hover {
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+
+.event-lst-box {
+  padding-bottom: 35px;
+}
+.event-lst-box .event-lst-txt {
+  padding-top: 5px;
+}
+.event-lst-box .event-lst-txt p:nth-child(1) {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.event-lst-box .event-lst-txt p:nth-child(2) {
+  line-height: 17px;
+  letter-spacing: -1px;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #767676;
+}
+.event-lst-box .event-lst-txt p:nth-child(3) {
+  padding-top: 10px;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #999999;
 }/*# sourceMappingURL=comm.css.map */
