@@ -67,3 +67,58 @@
 }
 
 // 종료된 이벤트
+.sec-event-end {
+  padding-top: 9px;
+  .event-end-tit {
+    letter-spacing: 1px;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Gothic A1', sans-serif;
+  }
+  .event-end-lst {
+    padding-top: 5px;
+  }
+}
+.event-end-box {
+  padding-top: 5px;
+  a{
+    display: flex;
+    .event-end-txt {
+      margin: 25px 0 0 10px;
+      p {
+        &:nth-child(1) {
+        letter-spacing: -1px;
+        font-size: 14px;
+        font-weight: 600;
+        font-family: 'Gothic A1', sans-serif;
+        }
+        &:nth-child(2) {
+          font-size: 13px;
+          font-weight: 600;
+          font-family: 'Gothic A1', sans-serif;
+        }
+      }
+    }
+  }
+}
+// 더보기
+.btn-event-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 335px;
+  height: 40px;
+  background: rgba(217, 217, 217, 0.3);
+  button {
+    padding: 10px 100px;
+    font-weight: bold;
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 16px;
+    &::after {
+      content: "\f107";
+      font-family: 'Line Awesome Free';
+      font-weight: 900;
+    }
+  }
+}

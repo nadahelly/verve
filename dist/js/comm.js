@@ -8,3 +8,4 @@ var swiper = new Swiper(".slide-g", {
 });
 
 var swiper = new Swiper(".sale-slide", {});
+

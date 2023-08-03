@@ -331,7 +331,7 @@ legend {
 }
 
 body {
-  background: url(../../images/이벤트리스트.png) 0 0 no-repeat;
+  background: url(../../images/이벤트상세.png) 0 0 no-repeat;
 }
 
 .container {
@@ -1456,7 +1456,7 @@ legend {
 }
 
 body {
-  background: url(../../images/이벤트리스트.png) 0 0 no-repeat;
+  background: url(../../images/이벤트상세.png) 0 0 no-repeat;
 }
 
 .main {
@@ -1979,4 +1979,161 @@ body {
   font-weight: 400;
   font-family: "Noto Sans KR", sans-serif;
   color: #999999;
+}
+
+.sec-event-end {
+  padding-top: 9px;
+}
+.sec-event-end .event-end-tit {
+  letter-spacing: 1px;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: "Gothic A1", sans-serif;
+}
+.sec-event-end .event-end-lst {
+  padding-top: 5px;
+}
+
+.event-end-box {
+  padding-top: 5px;
+}
+.event-end-box a {
+  display: flex;
+}
+.event-end-box a .event-end-txt {
+  margin: 25px 0 0 10px;
+}
+.event-end-box a .event-end-txt p:nth-child(1) {
+  letter-spacing: -1px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Gothic A1", sans-serif;
+}
+.event-end-box a .event-end-txt p:nth-child(2) {
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "Gothic A1", sans-serif;
+}
+
+.btn-event-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 335px;
+  height: 40px;
+  background: rgba(217, 217, 217, 0.3);
+}
+.btn-event-more button {
+  padding: 10px 100px;
+  font-weight: bold;
+  font-family: "Gothic A1", sans-serif;
+  font-size: 16px;
+}
+.btn-event-more button::after {
+  content: "\f107";
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+}
+
+.event-detail-tit {
+  position: absolute;
+  top: 19px;
+  left: 142px;
+  font-size: 25px;
+  font-weight: 900;
+  font-family: "Noto Serif KR", serif;
+}
+
+.left-util .btn-back {
+  padding-top: 12px;
+}
+.left-util .btn-back::before {
+  font-size: 20px;
+  content: "\f104";
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+}
+
+.event-detail-cont h3 {
+  margin: 27px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.event-detail-cont .event-cont-img img {
+  display: block;
+  margin: auto;
+}
+.event-detail-cont .event-cont-txt {
+  text-align: center;
+  letter-spacing: -1px;
+  margin: 28px;
+}
+.event-detail-cont .event-cont-txt p:nth-child(1) {
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.event-detail-cont .event-cont-txt p:nth-child(2) {
+  padding-top: 25px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.event-detail-cont .event-cont-txt p:nth-child(3) {
+  padding-bottom: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #FFA800;
+}
+
+.coupon-bnr {
+  width: 375px;
+  height: 550px;
+  background: rgba(217, 217, 217, 0.3);
+}
+.coupon-bnr .event-coupon-tit {
+  padding-top: 50px;
+  text-align: center;
+}
+.coupon-bnr .event-coupon-tit strong {
+  font-size: 22px;
+  font-weight: 500;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.coupon-bnr .event-coupon-tit p {
+  letter-spacing: -1px;
+  padding: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.coupon-bnr .event-coupon-img img {
+  display: block;
+  margin: 22px 50px;
+}
+.coupon-bnr .event-date-txt {
+  text-align: center;
+  padding-top: 14px;
+  letter-spacing: -1px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.coupon-bnr .event-coupon-bbs {
+  margin: 35px;
+  line-height: 15px;
+  letter-spacing: -0.6px;
+  font-size: 11px;
+  font-weight: 500;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #4E4D4D;
+}
+
+.event-bnr img {
+  display: block;
+  margin: auto;
 }/*# sourceMappingURL=comm.css.map */
