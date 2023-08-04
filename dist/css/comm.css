@@ -330,10 +330,6 @@ legend {
   content: "";
 }
 
-body {
-  background: url(../../images/이벤트상세.png) 0 0 no-repeat;
-}
-
 .container {
   padding: 0 20px;
 }
@@ -831,6 +827,7 @@ body {
 }
 
 .sec-sale {
+  position: relative;
   margin-top: 48px;
 }
 .sec-sale h2 {
@@ -838,6 +835,22 @@ body {
   letter-spacing: 1px;
   font-family: "Noto Serif KR", serif;
   font-weight: bold;
+  font-size: 20px;
+}
+.sec-sale .swiper-button-next {
+  color: #000;
+  top: 205px;
+  right: 35px;
+}
+.sec-sale .swiper-button-next::after {
+  font-size: 20px;
+}
+.sec-sale .swiper-button-prev {
+  color: #000;
+  top: 205px;
+  left: -7px;
+}
+.sec-sale .swiper-button-prev::after {
   font-size: 20px;
 }
 
@@ -867,6 +880,10 @@ body {
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.4px;
+}
+
+.lst-sale-section2 .sale-txt {
+  padding: 23px 30px 0 15px;
 }
 
 .sale-img {
@@ -1453,10 +1470,6 @@ legend {
   font-size: 0;
   clear: both;
   content: "";
-}
-
-body {
-  background: url(../../images/이벤트상세.png) 0 0 no-repeat;
 }
 
 .main {
@@ -2072,7 +2085,7 @@ body {
   margin: 28px;
 }
 .event-detail-cont .event-cont-txt p:nth-child(1) {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
   font-family: "Noto Sans KR", sans-serif;
 }
@@ -2135,5 +2148,5 @@ body {
 
 .event-bnr img {
   display: block;
-  margin: auto;
+  margin: 45PX 20PX;
 }/*# sourceMappingURL=comm.css.map */
