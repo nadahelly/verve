@@ -1934,11 +1934,25 @@ legend {
   font-weight: 500;
 }
 
-.slide {
-  padding-top: 23px;
-}
-.slide .slide-event {
+.slide_wrap {
+  position: relative;
   display: flex;
+  margin: auto;
+  padding: 0;
+}
+.slide_wrap .slide_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 375px;
+  height: 250px;
+}
+.slide_wrap .slide_item a {
+  animation-name: event;
+  animation-duration: 1.5s;
+}
+.slide_wrap .slide_item img {
+  overflow: hidden;
 }
 
 #main .event-tit {
@@ -2148,5 +2162,5 @@ legend {
 
 .event-bnr img {
   display: block;
-  margin: 45PX 20PX;
+  margin: 40PX 0;
 }/*# sourceMappingURL=comm.css.map */
