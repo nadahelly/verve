@@ -572,10 +572,14 @@ legend {
   font-weight: 400;
   font-family: "Noto Sans KR", sans-serif;
 }
-#main .depth2 a {
+#main .depth2 .w-d {
   color: #cfcfcf;
 }
-#main .depth2 a:hover {
+#main .depth2 .w-d:hover {
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+#main .depth2 .active {
   color: #000;
   border-bottom: 1px solid #000;
 }
@@ -1123,11 +1127,13 @@ legend {
 .btn-rank-more {
   display: flex;
   justify-content: center;
+  clear: both;
   align-items: center;
   margin-bottom: 10px;
   width: 335px;
   height: 40px;
   background: rgba(217, 217, 217, 0.3);
+  cursor: pointer;
 }
 .btn-rank-more button {
   padding: 10px 100px;
@@ -1139,6 +1145,11 @@ legend {
   content: "\f107";
   font-family: "Line Awesome Free";
   font-weight: 900;
+}
+
+.sec-rank .lst-rank li {
+  display: none;
+  list-style: none;
 }
 
 @font-face {
@@ -1936,23 +1947,45 @@ legend {
 
 .slide_wrap {
   position: relative;
-  display: flex;
-  margin: auto;
-  padding: 0;
-}
-.slide_wrap .slide_item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 375px;
+  overflow: hidden;
   height: 250px;
 }
-.slide_wrap .slide_item a {
-  animation-name: event;
-  animation-duration: 1.5s;
+
+.slide-event {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: ani-slide 10s linear infinite;
 }
-.slide_wrap .slide_item img {
-  overflow: hidden;
+
+@keyframes ani-slide {
+  0% {
+    left: 0;
+  }
+  30% {
+    left: 0;
+  }
+  33% {
+    left: -100%;
+  }
+  63% {
+    left: -100%;
+  }
+  66% {
+    left: -100%;
+  }
+  96% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+.slide-event img {
+  display: block;
+  width: 375px;
+  height: 250px;
 }
 
 #main .event-tit {
@@ -1964,7 +1997,7 @@ legend {
   font-weight: bold;
   font-size: 20px;
 }
-#main .event-tap .event-depth {
+#main .event-tab .event-depth {
   display: flex;
   justify-content: flex-start;
   margin-bottom: 30px;
@@ -1972,11 +2005,15 @@ legend {
   font-weight: 400;
   font-family: "Noto Sans KR", sans-serif;
 }
-#main .event-tap .event-depth a {
+#main .event-tab .event-depth .e-d {
   margin-right: 35px;
   color: #cfcfcf;
 }
-#main .event-tap .event-depth a:hover {
+#main .event-tab .event-depth .e-d:hover {
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+#main .event-tab .event-depth .active {
   color: #000;
   border-bottom: 1px solid #000;
 }
@@ -2045,11 +2082,13 @@ legend {
 .btn-event-more {
   display: flex;
   justify-content: center;
+  clear: both;
   align-items: center;
-  margin-bottom: 10px;
+  margin: 10px 0;
   width: 335px;
   height: 40px;
   background: rgba(217, 217, 217, 0.3);
+  cursor: pointer;
 }
 .btn-event-more button {
   padding: 10px 100px;
@@ -2061,6 +2100,11 @@ legend {
   content: "\f107";
   font-family: "Line Awesome Free";
   font-weight: 900;
+}
+
+.event-end-box {
+  display: none;
+  list-style: none;
 }
 
 .event-detail-tit {

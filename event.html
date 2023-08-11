@@ -124,21 +124,7 @@
         </ul>
       </nav>
       <div class="slide slide_wrap">
-        <div class="slide_item item1">
-          <a href="#">
-            <img src="./images/event/1.jpg" alt="dd">
-          </a>
-        </div>
-        <div class="slide_item item2">
-          <a href="#">
-            <img src="./images/event/2.jpg" alt="dd">
-          </a>
-        </div>
-        <div class="slide_pagination">
-          <a href="#"></a>
-          <a href="#"></a>
-        </div>
-        <!-- <ul class="slide-event">
+        <ul class="slide-event">
           <li>
             <a href="#">
               <img src="./images/event/1.jpg" alt="이달의 Verve 베네핏 가이드 가입 후 첫구매 시 20% 할인! 이 달의 Verve 회원 혜택을 확인하세요">
@@ -149,24 +135,24 @@
               <img src="./images/event/2.jpg" alt="#수신동의이벤트 Verve의 소식을 가장 빨리 만나는 방법. 지금 수신 동의 하시면, 놓치기 아까운 혜택들을 알려드려요.">
             </a>
           </li>
-        </ul> -->
+        </ul>
       </div>
       <main id="main" class="container">
         <h2 class="event-tit">EVENT</h2>
-        <div class="event-tap">
+        <div class="event-tab">
           <ul class="event-depth">
             <li>
-              <a href="#">ALL</a>
+              <a href="#" class="e-d active">ALL</a>
             </li>
             <li>
-              <a href="#">진행중</a>
+              <a href="#ing" class="e-d">진행중</a>
             </li>
             <li>
-              <a href="#">종료</a>
+              <a href="#end" class="e-d">종료</a>
             </li>
           </ul>
         </div>
-        <section class="sec-event-lst">
+        <section id="ing" class="sec-event-lst">
           <div class="event-lst-ing">
             <div class="event-lst-box">
               <a href="./event-detail.html">
@@ -254,7 +240,7 @@
             </div>
           </div>
         </section>
-        <section class="sec-event-end">
+        <section id="end" class="sec-event-end">
           <h3 class="event-end-tit">종료된 이벤트</h3>
           <div class="event-end-lst">
             <div class="event-end-box">
@@ -325,7 +311,7 @@
             </div>
           </div>
           <div class="btn-event-more">
-            <button type="button">more </button>
+            <button type="button">더보기 </button>
           </div>
         </section>
       </main>

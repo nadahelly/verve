@@ -78,12 +78,16 @@
     font-size: 13px;
     font-weight: 400;
     font-family: 'Noto Sans KR', sans-serif;
-    a {
+    .w-d {
       color: #cfcfcf;
       &:hover {
       color: #000;
       border-bottom: 1px solid #000;
       }
+    }
+    .active {
+      color: #000;
+      border-bottom: 1px solid #000;
     }
   }
 }
@@ -656,11 +660,13 @@
 .btn-rank-more {
   display: flex;
   justify-content: center;
+  clear: both;
   align-items: center;
   margin-bottom: 10px;
   width: 335px;
   height: 40px;
   background: rgba(217, 217, 217, 0.3);
+  cursor: pointer;
   button {
     padding: 10px 100px;
     font-weight: bold;
@@ -673,8 +679,7 @@
     }
   }
 }
-
-// #btn-more { display: none; }
-// #btn-more:checked ~ .lst-rank2 { display: block; } 
-// .lst-rank2 { display: none; }
-
+.sec-rank .lst-rank li {
+  display: none;
+  list-style: none;
+}

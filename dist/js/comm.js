@@ -19,21 +19,54 @@ var swiper = new Swiper(".sale-slide", {
   },
 });
 
-var slideIndex = 0;
-    showSlides();
+// 더 보기 버튼 구현 (women-rank)
+$(document).ready(function () {
+  $(".sec-rank .lst-rank li:lt(6)").show();
+  var items =  10;
+  var shown =  4;
+  $(".btn-rank-more button").click(function () {
+      shown = $(".sec-rank .lst-rank li:visible").length+4;
+      if(shown< items) {
+        $(".sec-rank .lst-rank li:lt("+shown+")").show(300);
+      } else {
+        $(".sec-rank .lst-rank li:lt("+items+")").show(300);
+        $(".btn-rank-more").hide();
+      }
+    });
+  });
 
-    function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("slide_item");
-       
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-            slideIndex = 1
-        }
-        slides[slideIndex - 1].style.display = "block";
-    
-        setTimeout(showSlides, 3500); // 2초마다 이미지가 체인지됩니다
-    }
+  // 더 보기 버튼 구현 (event)
+$(document).ready(function () {
+  $(".sec-event-end .event-end-box:lt(3)").show();
+  var items =  6;
+  var shown =  3;
+  $(".btn-event-more button").click(function () {
+      shown = $(".sec-event-end .event-end-box:visible").length+3;
+      if(shown< items) {
+        $(".sec-event-end .event-end-box:lt("+shown+")").show(300);
+      } else {
+        $(".sec-event-end .event-end-box:lt("+items+")").show(300);
+        $(".btn-event-more").hide();
+      }
+    });
+  });
+
+        
+// tab 색상넣기 (women)
+$(".tab-women .w-d").on("click", function () {
+  if($(this).hasClass("active")){
+    $(this).removeClass("active");
+  }else{
+    $(".tab-women .w-d").removeClass("active");
+    $(this).addClass("active");
+  }
+})
+// tab 색상넣기 (event)
+$(".event-depth .e-d").on("click", function () {
+  if($(this).hasClass("active")){
+    $(this).removeClass("active");
+  }else{
+    $(".event-depth .e-d").removeClass("active");
+    $(this).addClass("active");
+  }
+})
